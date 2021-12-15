@@ -1,0 +1,2 @@
+"0","#Visualize difference"
+"0","tm_shape(agg_mrt_overall_ExpectvsSatisf_positive) + tm_fill(""difference"", style = ""jenks"", n= 6, title = ""MRT/LRT:(AVG) Expectations vs Satisfaction Scores Difference (2016 - 2019)"") + tm_text(""PLN_AREA_N"", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)"

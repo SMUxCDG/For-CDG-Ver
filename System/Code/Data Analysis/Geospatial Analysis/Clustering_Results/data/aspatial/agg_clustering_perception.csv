@@ -1,0 +1,695 @@
+age,gender,monthly_income,instituition,region,location,type_of_student,type_of_employment,convenient_rental_car,difficulties_rental_car,reason_chosen_rental_car_company_convenient,reason_rental_car_convenience,reason_rental_car_occasions,affordable_bus,affordable_mrt,safe_taxi,safe_ride_hailing,safe_bus,safe_mrt,reason_taxi_comfort_of_privacy,reason_ride_hailing_ comfort_of_privacy,reason_ride_hailing_promotion,reason_taxi_promotion,customer_service_taxi,customer_service_ride_hailing,reason_ride_hailing_accessible,reason_taxi_more_accessible,reason_ride_hailing_easy_booking,cluster
+22 - 25,Female,Below $500,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Strongly Agree,Agree,0,0,1,1,Neutral,Neutral,1,1,0,1
+22 - 25,Female,Below $500,SMU,West,Bukit Batok,Full-time Student,Employed Part-time,No,No,1,1,1,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,"Strongly Agree
+",0,0,1,2
+22 - 25,Male,Below $500,SIT,West,Bukit Batok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Agree,Agree,0,0,1,0,Agree,"Strongly Agree
+",1,0,1,2
+18 - 21,Female,Below $500,SMU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,1,Strongly Agree,Agree,0,1,0,1
+22 - 25,Female,Prefer not to say,SIM,East,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Female,Below $500,NUS,North,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,0,0,Neutral,Agree,1,0,0,1
+22 - 25,Female,Below $500,NTU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Agree,Neutral,0,0,0,1,Neutral,Neutral,1,0,0,0
+18 - 21,Female,"$501 - $1,000",NTU,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Agree,Agree,1,1,1,1,Strongly Agree,Agree,1,1,1,0
+18 - 21,Male,Prefer not to say,SP,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Neutral,Neutral,0,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,0,1
+18 - 21,Female,"$501 - $1,000",NTU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Agree,Agree,Agree,Agree,1,1,1,1,Neutral,Neutral,1,1,0,2
+18 - 21,Female,Below $500,NUS,West,Clementi,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Neutral,Agree,Strongly Agree,Agree,0,0,1,1,Neutral,Agree,1,0,0,0
+18 - 21,Male,"$501 - $1,000",NTU,North-East,Hougang,Full-time Student,Not employed,Yes,No,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Neutral,Neutral,0,0,1,0,Neutral,Neutral,0,1,0,0
+22 - 25,Female,"$501 - $1,000",SMU,Central,Bishan,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Neutral,Agree,Neutral,Neutral,Neutral,Agree,0,0,1,0,Neutral,Agree,1,1,0,2
+26 - 29,Male,Prefer not to say,NTU,West,Jurong East,Full-time Student,Not employed,Yes,No,0,0,1,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Neutral,0,0,0,0,Neutral,Disagree,0,0,0,0
+22 - 25,Female,"$501 - $1,000",NTU,East,Simei,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Agree,Agree,0,1,1,0,Neutral,Neutral,1,1,1,1
+18 - 21,Female,"$1,001 - $2,000
+",NTU,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",0,1,1,1,Agree,Agree,1,1,1,0
+22 - 25,Female,Below $500,SIM,West,Jurong West,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Disagree,Neutral,Neutral,Agree,Agree,Agree,0,0,1,1,Agree,Neutral,0,0,0,0
+18 - 21,Female,Below $500,SMU,East,Tanah Merah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,1,0,1
+18 - 21,Female,"$501 - $1,000",SMU,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",1,1,1,1,Agree,Agree,1,1,1,0
+18 - 21,Female,"$501 - $1,000",TP,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Neutral,Agree,Neutral,0,1,1,1,Agree,Agree,1,0,1,0
+22 - 25,Female,Prefer not to say,SMU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Disagree,Disagree,Agree,Agree,0,0,1,1,Disagree,Disagree,0,0,0,1
+22 - 25,Female,"$2,001 - $3,000",SMU,North-East,Serangoon,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Agree,1,1,1,1,Agree,Agree,1,1,1,1
+22 - 25,Female,Below $500,NTU,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Agree,0,0,0,0,Strongly Agree,"Strongly Agree
+",1,1,0,0
+22 - 25,Female,Prefer not to say,NUS,West,Choa Chu Kang,Full-time Student,Not employed,No,No,1,1,1,Neutral,Agree,Agree,Agree,Agree,Agree,0,1,1,1,Strongly Agree,"Strongly Agree
+",0,0,0,0
+18 - 21,Female,Below $500,SUSS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Strongly Disagree,Agree,Neutral,Agree,1,0,0,1,Disagree,Neutral,0,0,1,1
+18 - 21,Female,Below $500,NTU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Neutral,Agree,1,1,0,0,Agree,Agree,1,0,1,1
+18 - 21,Female,Below $500,ITE College Central,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,1,0,0,Agree,Agree,1,1,0,0
+18 - 21,Female,"$501 - $1,000",NTU,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Strongly Agree,Agree,0,1,1,0,Neutral,Neutral,0,0,1,1
+18 - 21,Male,"$501 - $1,000",SMU,Central,Central Area / CBD,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,"Strongly Agree
+",0,0,0,0,Neutral,Agree,0,0,0,0
+18 - 21,Male,"$501 - $1,000",SP,West,Jurong East,Part-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Strongly Agree,"Strongly Agree
+",0,1,0,0
+18 - 21,Female,"$501 - $1,000",NTU,West,Jurong East,Full-time Student,Not employed,Yes,No,1,1,1,Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",Neutral,Agree,1,1,0,1,Strongly Agree,"Strongly Agree
+",1,1,1,0
+22 - 25,Female,Below $500,SMU,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,0,0,1,1,Neutral,Agree,0,0,1,1
+18 - 21,Female,"$1,001 - $2,000
+",NUS,West,Bukit Batok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Disagree,Disagree,Neutral,Disagree,0,0,1,0,Agree,"Strongly Agree
+",1,1,0,0
+22 - 25,Female,Below $500,SMU,Central,Bukit Merah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Neutral,Agree,Agree,"Strongly Agree
+",0,0,1,1,Strongly Agree,"Strongly Agree
+",0,0,1,2
+22 - 25,Male,"$501 - $1,000",SMU,Central,Queenstown,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Neutral,Neutral,Neutral,Disagree,0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Male,"$2,001 - $3,000",SIT,North,Sembawang,Part-time Student,Employed Full-time,Yes,No,0,1,1,Strongly Agree,Agree,Agree,Agree,Agree,"Strongly Agree
+",1,0,1,0,Disagree,Agree,0,0,0,1
+22 - 25,Female,"$501 - $1,000",SMU,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,"Strongly Agree
+",0,0,1,0,Agree,Agree,1,0,0,1
+22 - 25,Female,"$501 - $1,000",NTU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Disagree,Neutral,0,0,0,0,Agree,Agree,0,0,0,1
+22 - 25,Male,"$501 - $1,000",SMU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",0,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,1
+18 - 21,Female,"$1,001 - $2,000
+",NTU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,1,1,1,1
+18 - 21,Female,"$501 - $1,000",NTU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,"Strongly Agree
+",Strongly Agree,Neutral,0,0,1,0,Agree,Neutral,0,0,1,1
+18 - 21,Male,Below $500,NUS,North-East,Punggol,Full-time Student,Not employed,Yes,No,1,1,0,Neutral,Agree,Agree,Neutral,Neutral,Agree,0,0,1,0,Agree,Neutral,1,1,1,1
+22 - 25,Male,Prefer not to say,SMU,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Neutral,Agree,1,1,1,0
+22 - 25,Male,"$501 - $1,000",NTU,East,Pasir Ris,Part-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Neutral,Neutral,Disagree,"Strongly Agree
+",1,0,0,0,Agree,Neutral,1,0,0,1
+18 - 21,Female,Below $500,SMU,Central,Central Area / CBD,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,0,0,1,1,Neutral,Neutral,0,0,0,0
+22 - 25,Female,Below $500,NTU,Central,Geylang,Full-time Student,Not employed,No,Yes,1,1,1,Disagree,Agree,Agree,Agree,Agree,Neutral,0,0,1,1,Neutral,Neutral,1,1,0,0
+22 - 25,Male,Below $500,NTU,North-East,Ang Mo Kio,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Disagree,Neutral,Agree,"Strongly Agree
+",1,1,1,1,Neutral,Agree,1,1,0,2
+18 - 21,Female,Prefer not to say,SMU,Central,Central Area / CBD,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,0,0,0,0
+22 - 25,Male,Below $500,NUS,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Strongly Disagree,"Strongly Disagree
+",1,1,0,0
+18 - 21,Female,"$501 - $1,000",SMU,Central,Central Area / CBD,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Strongly Agree,Agree,0,0,1,0,Disagree,Neutral,1,1,0,0
+18 - 21,Female,"$501 - $1,000",SMU,West,Jurong West,Full-time Student,Not employed,Yes,No,1,0,1,Agree,Disagree,Agree,Agree,Agree,Agree,0,0,0,0,Neutral,Neutral,0,0,0,0
+26 - 29,Male,">$3,001",NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Neutral,Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,1,0,0,Agree,"Strongly Agree
+",1,0,1,1
+18 - 21,Female,Below $500,SMU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Agree,Neutral,Agree,Agree,0,0,0,1,Agree,"Strongly Agree
+",1,0,0,2
+22 - 25,Male,"$501 - $1,000",NTU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Neutral,Agree,Agree,Agree,0,1,1,1,Neutral,Agree,1,1,1,1
+22 - 25,Male,Below $500,SMU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,0,Neutral,Agree,0,1,1,1
+26 - 29,Female,Prefer not to say,NP,Central,Marine Parade,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Disagree,Neutral,Neutral,Neutral,0,0,0,0,Disagree,Neutral,0,0,0,1
+18 - 21,Female,Below $500,SMU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Neutral,"Strongly Agree
+",0,0,0,0,Agree,Agree,1,1,0,1
+22 - 25,Female,"$501 - $1,000",SIM,North,Yishun,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,1,Agree,Agree,0,0,0,1
+26 - 29,Male,">$3,001",Coursera,North-East,Sengkang,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Neutral,Agree,0,0,0,0,Agree,Agree,1,1,0,1
+18 - 21,Female,Below $500,NTU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+22 - 25,Female,Prefer not to say,Murdoch ,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Agree,0,0,1,1,Neutral,Neutral,1,0,0,1
+18 - 21,Female,Below $500,SMU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Disagree,Agree,0,0,0,1
+22 - 25,Female,"$501 - $1,000",NTU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,Neutral,0,0,1,1
+18 - 21,Female,"$1,001 - $2,000
+",SMU,Central,Bukit Timah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,"Strongly Agree
+",Agree,Agree,Strongly Agree,Neutral,0,0,1,1,Agree,Agree,1,0,0,0
+18 - 21,Female,Below $500,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Disagree,Agree,Agree,Agree,Agree,1,1,0,0,Agree,Agree,0,1,1,1
+18 - 21,Female,"$1,001 - $2,000
+",NP,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Agree,Agree,0,1,1,1
+22 - 25,Female,Below $500,NUS,North,Yew Tee,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Disagree,Agree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+22 - 25,Female,Prefer not to say,SMU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,1,1,1,Neutral,Neutral,0,0,0,1
+18 - 21,Male,Below $500,SMU,North-East,Hougang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Strongly Agree,"Strongly Agree
+",1,0,0,0
+18 - 21,Female,Below $500,NTU,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,0,1,0,Strongly Agree,"Strongly Agree
+",0,0,0,1
+22 - 25,Male,Prefer not to say,NTU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Disagree,Agree,Neutral,1,1,1,1,Neutral,Neutral,0,1,0,1
+22 - 25,Female,Prefer not to say,NTU,Central,River valley,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Disagree,Neutral,Agree,0,0,1,1,Neutral,Neutral,0,0,0,1
+18 - 21,Female,"$501 - $1,000",SMU,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Disagree,Agree,Agree,Agree,Agree,0,0,1,0,Agree,Agree,0,1,0,0
+22 - 25,Male,Below $500,SIT,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,0,0,0,0,Neutral,Neutral,1,1,0,1
+18 - 21,Female,"$2,001 - $3,000",Durham University,Central,Queenstown,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,1,1
+18 - 21,Female,"$1,001 - $2,000
+",NTU,North-East,Hougang,Full-time Student,Not employed,Yes,Yes,1,1,1,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",1,1,1,1,Agree,"Strongly Agree
+",1,1,1,0
+22 - 25,Female,Below $500,NTU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,0,0,1,0,Neutral,Neutral,0,0,0,0
+22 - 25,Female,"$501 - $1,000",SMU,Central,Bukit Timah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Agree,Agree,Strongly Agree,"Strongly Agree
+",1,1,1,1,Neutral,Neutral,1,0,0,0
+22 - 25,Male,"$501 - $1,000",NTU,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Disagree,Agree,Agree,0,0,0,1,Strongly Agree,Neutral,1,0,0,1
+22 - 25,Female,Below $500,SIT,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Neutral,Neutral,0,0,1,1,Agree,Agree,0,1,0,1
+18 - 21,Female,Below $500,NTU,North,Sembawang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Disagree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,0,1,1
+18 - 21,Female,Below $500,NTU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,1,1,1,1,Agree,Agree,0,0,0,0
+22 - 25,Female,"$501 - $1,000",NUS,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Neutral,Strongly Agree,"Strongly Agree
+",1,1,1,1,Neutral,Neutral,1,1,1,1
+22 - 25,Female,"$1,001 - $2,000
+",SMU,North-East,Sengkang,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Disagree,Agree,Strongly Agree,Agree,0,0,1,0,Strongly Agree,Agree,0,0,0,1
+18 - 21,Female,"$501 - $1,000",NTU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Agree,Agree,Agree,Agree,Neutral,0,0,1,1,Agree,Agree,0,0,0,2
+22 - 25,Female,"$501 - $1,000",SUSS,North-East,Hougang,Part-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,0,Neutral,Agree,0,0,0,0
+22 - 25,Female,"$501 - $1,000",NTU,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Neutral,Agree,Agree,1,1,1,1,Neutral,"Strongly Agree
+",0,0,0,1
+22 - 25,Female,"$2,001 - $3,000",NTU,West,Jurong East,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",1,1,0,0,Strongly Agree,"Strongly Agree
+",0,0,0,0
+22 - 25,Female,"$501 - $1,000",NTU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Strongly Agree,Agree,0,0,1,0,Disagree,Agree,0,0,0,1
+18 - 21,Prefer not to say,Below $500,NTU,Central,Bukit Timah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Neutral,Neutral,Neutral,Neutral,0,0,1,1,Neutral,Neutral,0,0,0,0
+22 - 25,Male,Prefer not to say,SMU,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Agree,Agree,1,0,1,1,Neutral,Neutral,1,1,1,0
+18 - 21,Female,Below $500,SMU,Central,Geylang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,0,0
+22 - 25,Male,Below $500,NTU,Central,Bukit Merah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Neutral,Strongly Agree,Agree,Agree,Agree,0,0,1,1,Neutral,Neutral,1,0,0,0
+18 - 21,Female,Below $500,NTU,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Neutral,Agree,Agree,1,1,0,0,Disagree,Agree,1,1,1,0
+22 - 25,Female,Prefer not to say,SIT,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Agree,Agree,Disagree,Neutral,Neutral,1,1,1,1,Agree,Agree,0,0,0,1
+18 - 21,Male,Below $500,NTU,North,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,0,Agree,Neutral,1,1,0,1
+18 - 21,Female,Below $500,NTU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,0,0,0,0
+22 - 25,Female,"$501 - $1,000",SMU,West,Choa Chu Kang,Full-time Student,Not employed,No,Yes,1,1,1,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,1,1,0
+18 - 21,Female,Below $500,SMU,Central,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Agree,Strongly Agree,"Strongly Agree
+",0,1,1,0,Neutral,Agree,1,0,0,1
+22 - 25,Female,"$1,001 - $2,000
+",Psb Academy (La trobe uni),North,Yishun,Part-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Strongly Agree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+22 - 25,Female,"$501 - $1,000",NTU,West,Choa Chu Kang,Full-time Student,Not employed,Yes,No,1,1,1,Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,1,1,1,Agree,Agree,1,1,1,0
+26 - 29,Male,Prefer not to say,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Agree,0,0,1,1,Neutral,Neutral,0,0,0,1
+26 - 29,Male,Below $500,SUSS,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,0,Agree,"Strongly Agree
+",0,0,1,2
+22 - 25,Female,"$1,001 - $2,000
+",SMU,West,Choa Chu Kang,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,0,0,0,0
+22 - 25,Male,Below $500,SMU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Agree,0,0,0,0,Neutral,Neutral,1,1,0,2
+22 - 25,Female,Below $500,NUS,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,1,1,0,Agree,Agree,1,1,1,2
+18 - 21,Female,"$501 - $1,000",SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,Agree,1,1,0,0
+18 - 21,Female,Below $500,SMU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,0,0,Agree,Agree,0,1,0,1
+22 - 25,Female,Below $500,NTU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,Agree,1,1,1,1
+22 - 25,Male,Below $500,NTU,West,Taman Jurong,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Neutral,Agree,0,0,1,1,Agree,Agree,1,1,0,1
+18 - 21,Female,Below $500,NTU,Central,Paya lebar,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,0,0,1,1,Strongly Agree,"Strongly Agree
+",0,0,1,1
+18 - 21,Male,Below $500,SP,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,1,1,1,1,Neutral,Neutral,1,0,1,2
+18 - 21,Female,"$1,001 - $2,000
+",NTU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,"Strongly Agree
+",0,0,1,0,Neutral,Neutral,1,1,0,0
+22 - 25,Female,Below $500,SMU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,1,1,1,1,Strongly Agree,Agree,0,0,0,1
+18 - 21,Female,"$501 - $1,000",SIT,North-East,Sengkang,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Strongly Agree,"Strongly Agree
+",1,0,0,1
+18 - 21,Female,"$501 - $1,000",SMU,Central,Kallang / Whampao,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Disagree,Neutral,1,0,0,0
+22 - 25,Female,"$1,001 - $2,000
+",University of Edinburgh,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,1,Agree,Agree,1,1,0,0
+22 - 25,Female,"$501 - $1,000",SMU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Disagree,Neutral,Neutral,Agree,Strongly Disagree,0,0,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,1
+22 - 25,Female,"$501 - $1,000",SMU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Strongly Agree,Agree,0,0,1,1,Neutral,Agree,0,0,0,2
+18 - 21,Female,"$501 - $1,000",SUSS,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Neutral,0,0,1,1,Neutral,Agree,0,0,0,0
+18 - 21,Female,Below $500,NTU,North-East,Punggol,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Disagree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Agree,Agree,0,1,1,1
+18 - 21,Female,Below $500,SMU,Tanjong Pagar,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,0,Agree,Agree,1,0,0,1
+22 - 25,Female,Below $500,SUSS,North,Sembawang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,1,Agree,Agree,1,0,0,1
+22 - 25,Female,Below $500,NUS,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,1,1,1,0,Strongly Agree,"Strongly Agree
+",1,1,1,1
+26 - 29,Male,Below $500,NTU,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Agree,Agree,Agree,1,1,1,1,Neutral,Neutral,1,1,0,1
+22 - 25,Male,"$501 - $1,000",NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",1,1,1,1,Agree,Agree,1,0,0,1
+22 - 25,Female,"$501 - $1,000",SMU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Strongly Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Male,Prefer not to say,SMU,Central,Queenstown,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Strongly Agree,Agree,Agree,"Strongly Agree
+",0,1,1,1,Strongly Agree,"Strongly Agree
+",1,0,0,1
+22 - 25,Male,"$501 - $1,000",NTU,North-East,Sengkang,Full-time Student,Not employed,Yes,Yes,1,1,0,Strongly Agree,Agree,Agree,Agree,Strongly Agree,Agree,0,0,1,1,Agree,Agree,1,0,0,1
+26 - 29,Male,Below $500,NTU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Agree,Agree,Agree,"Strongly Agree
+",0,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,1
+22 - 25,Female,"$1,001 - $2,000
+",SMU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Agree,0,0,1,0,Neutral,Agree,1,1,0,0
+18 - 21,Female,Below $500,NUS,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Disagree,Disagree,Neutral,Neutral,0,1,1,1,Neutral,Agree,0,0,0,0
+22 - 25,Female,"$2,001 - $3,000",NTU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Neutral,Agree,0,0,0,1
+18 - 21,Female,Prefer not to say,NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Agree,1,0,1,1,Agree,Agree,0,1,0,1
+22 - 25,Female,Below $500,SIT,North,Sembawang,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Neutral,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,1,1,1,1
+18 - 21,Male,Below $500,NUS,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,1,0,1,Agree,Agree,0,1,1,0
+18 - 21,Female,Below $500,NTU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Neutral,Disagree,Agree,Agree,1,1,0,1,Disagree,Agree,1,1,0,0
+18 - 21,Female,Below $500,NUS,Central,Queenstown,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,0,1
+18 - 21,Female,Below $500,NUS,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Disagree,Neutral,Agree,0,1,1,0,Agree,Agree,1,0,1,2
+22 - 25,Male,Below $500,NUS,Central,Geylang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Strongly Agree,"Strongly Agree
+",0,0,1,1,Strongly Agree,"Strongly Agree
+",1,1,0,0
+18 - 21,Female,Below $500,NTU,North-East,Hougang,Full-time Student,Not employed,Yes,Yes,1,1,1,Strongly Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,1,1,1,0
+22 - 25,Male,Below $500,NUS,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Neutral,Neutral,Neutral,Neutral,0,0,0,1,Agree,Agree,0,0,0,2
+18 - 21,Female,Below $500,NUS,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Disagree,Agree,Agree,Agree,Agree,1,1,0,0,Agree,Agree,0,0,0,0
+22 - 25,Female,Prefer not to say,SMU,North,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,0,1,1,Disagree,"Strongly Disagree
+",0,0,0,1
+26 - 29,Female,">$3,001",University of Edinburgh,Central,Toa Payoh,Part-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,1,1,1,Agree,"Strongly Agree
+",0,0,1,1
+22 - 25,Male,"$501 - $1,000",NTU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Neutral,Neutral,0,0,1,1,Neutral,Neutral,0,0,1,0
+>29,Female,">$3,001",NTU,East,Paya Lebar,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,Agree,Agree,0,0,1,1,Neutral,Neutral,1,1,0,1
+18 - 21,Male,"$501 - $1,000",NTU,East,Paya lebar,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Neutral,Neutral,0,0,0,0,Agree,Neutral,0,0,0,1
+18 - 21,Female,"$501 - $1,000",SMU,North,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Agree,Agree,0,0,1,1,Neutral,Agree,1,1,1,1
+18 - 21,Female,Prefer not to say,SMU,Central,Queenstown,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,0,0,1,0,Neutral,Agree,1,1,1,1
+22 - 25,Female,Prefer not to say,NUS,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Disagree,Neutral,Agree,1,0,0,1,Agree,Agree,0,0,0,1
+18 - 21,Female,Below $500,NUS,North-East,Hougang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,0,0
+22 - 25,Female,"$1,001 - $2,000
+",NUS,North-East,Ang Mo Kio,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,0,1,1,Neutral,"Strongly Agree
+",0,1,1,2
+22 - 25,Male,Below $500,NTU,North,Woodlands,Full-time Student,Not employed,Yes,Yes,1,1,1,Agree,Agree,Neutral,Agree,Agree,Agree,0,0,1,1,Neutral,Agree,0,0,0,1
+22 - 25,Female,"$501 - $1,000",SMU,Central,Central Area / CBD,Full-time Student,Not employed,Yes,No,1,1,1,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,Agree,0,1,0,0
+22 - 25,Female,"$1,001 - $2,000
+",SMU,Central,Central Area / CBD,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Neutral,Agree,Neutral,Disagree,Neutral,Neutral,1,1,1,1,Agree,Agree,0,1,0,0
+22 - 25,Male,Below $500,SIM,North,Yishun,Full-time Student,Not employed,Yes,Yes,1,1,1,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,1,Disagree,Neutral,1,0,1,1
+22 - 25,Male,Prefer not to say,SIM,West,Choa Chu Kang,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,"Strongly Agree
+",Agree,Agree,0,0,0,0,Neutral,"Strongly Agree
+",0,1,1,0
+22 - 25,Female,Prefer not to say,University of the arts london,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,1,1,0,Neutral,Neutral,0,1,0,0
+22 - 25,Male,Below $500,SMU,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Disagree,Strongly Agree,Agree,1,1,1,0,Agree,"Strongly Agree
+",0,0,0,0
+22 - 25,Male,Below $500,SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Strongly Agree,Neutral,Neutral,"Strongly Agree
+",1,0,0,1,Strongly Agree,Neutral,1,0,0,0
+22 - 25,Female,">$3,001",NUS,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Strongly Agree,Agree,0,0,1,1,Agree,Disagree,1,0,0,1
+22 - 25,Male,Below $500,SMU,North-East,Ang Mo Kio,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Strongly Disagree,Disagree,0,0,0,2
+22 - 25,Male,Below $500,NUS,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,1,0,1
+22 - 25,Male,"$501 - $1,000",NTU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,1,Neutral,Neutral,1,0,1,1
+22 - 25,Male,"$1,001 - $2,000
+",SIT,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Agree,Agree,1,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,0
+>29,Male,Prefer not to say,NUS,North-East,Serangoon,Full-time Student,Employed Full-time,No,Yes,1,1,0,Agree,"Strongly Agree
+",Strongly Agree,Neutral,Agree,"Strongly Agree
+",1,0,0,0,Disagree,Disagree,1,0,1,1
+22 - 25,Female,Below $500,NTU,East,Tampines,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Disagree,Neutral,Agree,Neutral,Agree,Agree,1,0,0,1,Neutral,Agree,0,0,1,1
+18 - 21,Female,Below $500,SIT,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",1,1,1,1,Neutral,Neutral,0,0,0,2
+22 - 25,Female,Below $500,SMU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Neutral,Neutral,0,0,0,2
+18 - 21,Male,"$1,001 - $2,000
+",NTU,West,Jurong East,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,Neutral,1,1,0,0
+22 - 25,Male,"$2,001 - $3,000",NUS,West,Bukit Batok,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,0,0,Agree,Agree,1,0,1,0
+22 - 25,Male,"$1,001 - $2,000
+",SMU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,"Strongly Agree
+",Agree,Agree,0,0,1,1,Strongly Disagree,"Strongly Disagree
+",0,0,1,1
+22 - 25,Female,"$2,001 - $3,000",SUSS,West,Jurong West,Part-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Neutral,Agree,1,1,0,0,Agree,Agree,0,1,1,0
+18 - 21,Female,Prefer not to say,SMU,North-East,Ang Mo Kio,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,0,Agree,Neutral,0,0,0,2
+22 - 25,Female,Below $500,SMU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,Agree,0,1,0,2
+18 - 21,Female,Below $500,NTU,North,Yishun,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Strongly Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+22 - 25,Female,Below $500,SMU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Neutral,Agree,Agree,Strongly Agree,Agree,0,0,0,0,Neutral,Agree,0,0,0,1
+22 - 25,Female,Below $500,SIT,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Strongly Disagree,Neutral,Agree,Agree,Agree,1,1,1,1,Neutral,Neutral,1,1,1,0
+22 - 25,Female,Below $500,RP,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Strongly Agree,"Strongly Agree
+",0,0,1,0,Strongly Disagree,Neutral,0,0,0,0
+22 - 25,Female,Below $500,NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Neutral,Neutral,Neutral,Neutral,0,0,0,0,Neutral,Neutral,0,0,1,1
+22 - 25,Male,Below $500,NTU,West,Jurong East,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Agree,0,1,1,0,Neutral,Neutral,0,0,0,0
+22 - 25,Female,"$2,001 - $3,000",NUS,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Disagree,"Strongly Disagree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Strongly Disagree,"Strongly Disagree
+",0,0,0,1
+18 - 21,Female,Below $500,NTU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Neutral,1,1,1,1
+18 - 21,Female,Prefer not to say,SMU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Neutral,Neutral,0,0,1,0,Agree,"Strongly Agree
+",1,0,1,2
+18 - 21,Female,"$501 - $1,000",NUS,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,"Strongly Agree
+",0,0,1,0,Agree,Agree,0,0,0,1
+22 - 25,Male,Below $500,NTU,West,Bukit Panjang,Full-time Student,Not employed,Yes,No,1,1,1,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Disagree,Disagree,1,0,0,0
+22 - 25,Female,"$2,001 - $3,000",SMU,North,Sembawang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,1,Neutral,Agree,0,0,0,1
+22 - 25,Female,Prefer not to say,SMU,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Neutral,0,0,1,0,Agree,Agree,1,0,1,0
+18 - 21,Female,Prefer not to say,NUS,North-East,Ang Mo Kio,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,0,0,0,0,Agree,"Strongly Agree
+",1,1,0,2
+18 - 21,Female,"$1,001 - $2,000
+",SMU,East,Tampines,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Agree,Neutral,Agree,Agree,1,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,1
+22 - 25,Female,Below $500,NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Disagree,Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+18 - 21,Female,Below $500,NUS,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,"Strongly Agree
+",Neutral,Neutral,Neutral,Neutral,0,1,1,1,Strongly Agree,"Strongly Agree
+",0,0,0,0
+22 - 25,Female,"$1,001 - $2,000
+",SMU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,"Strongly Agree
+",Neutral,"Strongly Agree
+",Neutral,"Strongly Agree
+",1,1,0,1,Neutral,"Strongly Agree
+",1,1,0,0
+22 - 25,Male,Prefer not to say,SMU,West,Jurong East,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Neutral,Agree,0,1,1,0
+22 - 25,Female,Prefer not to say,NTU,North-East,Hougang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Agree,Agree,0,0,0,0,Neutral,Agree,0,0,0,0
+18 - 21,Female,Below $500,SMU,East,Paya Lebar,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,"Strongly Agree
+",Agree,Neutral,Agree,Agree,0,0,0,1,Agree,Agree,1,1,1,0
+18 - 21,Female,"$1,001 - $2,000
+",NTU,East,Tampines,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,1,0,0,Agree,Agree,0,1,1,1
+22 - 25,Male,"$501 - $1,000",SMU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Agree,0,0,1,1,Neutral,Neutral,1,1,0,1
+>29,Female,"$2,001 - $3,000",NUS,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Agree,Agree,Agree,Agree,1,1,1,0,Agree,Agree,1,0,1,1
+26 - 29,Female,Below $500,NTU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Agree,Agree,Neutral,Agree,Agree,0,0,0,0,Neutral,Agree,1,1,0,1
+22 - 25,Male,Below $500,SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Agree,Agree,"Strongly Agree
+",0,0,0,0,Disagree,"Strongly Disagree
+",1,1,0,0
+22 - 25,Male,Below $500,SMU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,0,0,1,1,Neutral,Neutral,1,1,1,2
+18 - 21,Female,"$501 - $1,000",NTU,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,1,1,1,Agree,Agree,0,0,0,2
+18 - 21,Female,Below $500,NUS,West,Clementi,Full-time Student,Not employed,Yes,No,1,1,0,Agree,Neutral,Neutral,Neutral,Agree,Agree,0,0,1,1,Neutral,Neutral,0,0,0,0
+22 - 25,Female,"$501 - $1,000",SMU,North-East,Ang Mo Kio,Full-time Student,Not employed,No,No,1,0,1,Neutral,Agree,Agree,Agree,Agree,Agree,1,0,1,1,Agree,Agree,1,1,1,2
+22 - 25,Female,Below $500,SMU,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Disagree,Agree,Neutral,Agree,0,0,1,0,Agree,"Strongly Agree
+",0,0,1,1
+22 - 25,Male,"$501 - $1,000",NTU,East,Bedok,Full-time Student,Not employed,Yes,No,1,1,1,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,1,0,2
+22 - 25,Male,"$1,001 - $2,000
+",SMU,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Neutral,"Strongly Agree
+",1,0,1,0
+22 - 25,Female,Below $500,SMU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Neutral,Agree,Agree,Agree,Agree,0,1,1,1,Neutral,Agree,1,0,0,2
+18 - 21,Female,Below $500,SMU,East,Bedok,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Disagree,Neutral,Strongly Agree,"Strongly Agree
+",0,1,1,0,Strongly Agree,"Strongly Agree
+",1,1,1,2
+22 - 25,Male,"$1,001 - $2,000
+",SMU,North-East,Sengkang,Full-time Student,Not employed,Yes,No,1,1,1,Strongly Agree,Agree,Strongly Agree,Agree,Agree,Agree,1,0,0,0,Strongly Agree,"Strongly Disagree
+",0,1,0,1
+22 - 25,Female,Below $500,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,1,1,1
+>29,Male,">$3,001",NTU,West,Choa Chu Kang,Full-time Student,Employed Full-time,Yes,No,1,1,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,0,Neutral,Agree,0,1,0,0
+22 - 25,Female,Below $500,SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,0,0,0,0,Neutral,Neutral,0,0,0,0
+22 - 25,Female,"$1,001 - $2,000
+",NUS,West,Choa Chu Kang,Part-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Neutral,Agree,0,0,1,0,Strongly Agree,"Strongly Agree
+",1,0,1,0
+22 - 25,Male,"$2,001 - $3,000",SIT,West,Choa Chu Kang,Full-time Student,Employed Full-time,Yes,Yes,1,0,1,Agree,"Strongly Agree
+",Disagree,Disagree,Agree,Neutral,1,1,0,0,Disagree,Agree,0,0,0,0
+26 - 29,Male,"$2,001 - $3,000",NUS,West,Choa Chu Kang,Full-time Student,Not employed,Yes,No,1,1,1,Agree,Agree,Neutral,Neutral,Agree,"Strongly Agree
+",1,0,1,0,Disagree,Disagree,1,1,1,0
+22 - 25,Female,Below $500,SMU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",0,0,0,0,Agree,"Strongly Agree
+",0,1,0,0
+22 - 25,Female,Prefer not to say,NTU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Agree,Agree,0,0,1,1,Strongly Agree,Agree,0,0,1,1
+22 - 25,Female,Below $500,SMU,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,1,1,1,Strongly Agree,Agree,1,1,1,1
+18 - 21,Female,Prefer not to say,NUS,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Agree,Agree,0,0,1,1,Agree,Agree,0,0,0,1
+22 - 25,Male,Below $500,NTU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Neutral,Neutral,Neutral,Neutral,0,1,1,1,Strongly Agree,Agree,1,1,1,1
+22 - 25,Female,Below $500,SMU,North,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+22 - 25,Male,"$1,001 - $2,000
+",SMU,East,Kallang / Whampao,Part-time Student,Not employed,Yes,No,1,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,0,0,0,0
+18 - 21,Female,Below $500,NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Neutral,Agree,0,0,1,1,Agree,Agree,0,0,0,1
+22 - 25,Female,Below $500,SMU,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Male,"$501 - $1,000",SMU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Neutral,Agree,1,1,1,1
+22 - 25,Male,Below $500,SMU,North,Woodlands,Full-time Student,Not employed,No,No,0,0,1,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",0,1,1,1,Neutral,Agree,0,1,1,1
+22 - 25,Male,"$501 - $1,000",SMU,East,Pasir Ris,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",Agree,"Strongly Agree
+",0,0,1,0,Disagree,Agree,0,1,1,0
+18 - 21,Female,Below $500,SMU,West,Bukit Batok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Neutral,Strongly Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,1,1,0,2
+>29,Female,"$501 - $1,000",SUSS,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Agree,Agree,0,1,1,0,Agree,Agree,1,1,1,0
+22 - 25,Female,"$501 - $1,000",NTU,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,1,0,0
+22 - 25,Prefer not to say,Prefer not to say,NTU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,1,1,0,0
+22 - 25,Male,"$501 - $1,000",NTU,North,Yishun,Full-time Student,Not employed,Yes,No,1,1,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,0,0,1
+22 - 25,Male,Below $500,SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,0,0,Disagree,Disagree,0,0,0,0
+18 - 21,Male,"$501 - $1,000",SMU,Central,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Agree,Agree,Agree,0,0,1,1,Neutral,Neutral,1,0,0,1
+22 - 25,Female,Below $500,SMU,Central,Marine Parade,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,1,1,1,1,Agree,Agree,0,0,1,0
+18 - 21,Female,Below $500,NP,West,Bukit Batok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Neutral,Agree,Agree,Agree,1,1,1,1,Agree,Agree,1,1,1,0
+18 - 21,Female,"$2,001 - $3,000",PSB ACADEMY,North,Sembawang,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Disagree,Neutral,1,1,1,0,Agree,Agree,1,1,1,1
+22 - 25,Female,Below $500,SMU,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Disagree,Disagree,"Strongly Disagree
+",Strongly Agree,Agree,0,0,0,1,Disagree,"Strongly Disagree
+",1,0,0,0
+22 - 25,Female,Below $500,SMU,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Neutral,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,0,0,1,Agree,"Strongly Agree
+",0,0,1,0
+>29,Male,"$1,001 - $2,000
+",BMC,Central,Bukit Merah,Part-time Student,Employed Part-time,Yes,Yes,1,1,1,Strongly Agree,Disagree,Agree,Disagree,Disagree,Disagree,0,0,1,0,Strongly Disagree,"Strongly Disagree
+",1,0,1,1
+22 - 25,Male,Below $500,SMU,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Strongly Agree,Agree,0,0,0,2
+22 - 25,Female,Below $500,SMU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Neutral,0,1,0,1,Neutral,Agree,1,0,0,0
+22 - 25,Female,Below $500,SMU,North-East,Sengkang,Full-time Student,Not employed,Yes,No,1,1,0,Agree,Disagree,Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Disagree,Disagree,1,1,0,1
+18 - 21,Female,"$501 - $1,000",SMU,East,Bedok,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,0,0,1,1,Agree,Neutral,0,0,1,2
+22 - 25,Female,Below $500,SIM,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,"Strongly Agree
+",0,1,1,1,Agree,"Strongly Agree
+",1,1,1,0
+18 - 21,Female,Prefer not to say,Overseas,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,1
+18 - 21,Male,Prefer not to say,NP,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,"Strongly Agree
+",Agree,Agree,0,0,0,0,Strongly Agree,"Strongly Agree
+",1,1,1,0
+22 - 25,Female,Below $500,NTU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Agree,Agree,0,0,0,0,Agree,Agree,0,0,0,1
+18 - 21,Female,"$501 - $1,000",SMU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Disagree,Neutral,Agree,Agree,Strongly Agree,"Strongly Agree
+",1,0,1,0,Agree,"Strongly Agree
+",0,0,1,0
+22 - 25,Male,Below $500,SUSS,North,Sembawang,Part-time Student,Not employed,Yes,No,0,0,1,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,0,Disagree,Disagree,0,0,0,1
+22 - 25,Female,Prefer not to say,SMU,North-East,Hougang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Agree,Agree,Agree,Agree,0,0,0,0,Neutral,Agree,1,1,0,0
+18 - 21,Female,"$1,001 - $2,000
+",SMU,Central,Central Area / CBD,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Neutral,Agree,0,0,1,1,Strongly Agree,Agree,0,0,0,0
+22 - 25,Prefer not to say,Prefer not to say,NTU,East,Prefer not to say,Full-time Student,Not employed,Yes,No,1,1,1,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Neutral,1,1,1,1
+22 - 25,Female,Below $500,NUS,West,Bukit Panjang,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,0,Neutral,Neutral,0,0,0,0
+22 - 25,Female,Below $500,SUSS,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Neutral,Agree,Agree,Agree,0,1,1,1,Agree,"Strongly Agree
+",1,1,1,0
+22 - 25,Female,Below $500,NTU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,1,1,1,1,Neutral,Neutral,1,1,1,0
+22 - 25,Male,"$501 - $1,000",SIM,Central,Central Area / CBD,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Agree,Agree,Neutral,Agree,0,0,1,1,Agree,Agree,0,0,1,0
+22 - 25,Female,Prefer not to say,NTU,West,Bukit Batok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,"Strongly Agree
+",0,0,1,1,Agree,"Strongly Agree
+",0,1,0,0
+18 - 21,Female,"$501 - $1,000",SMU,North,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Disagree
+",Strongly Agree,"Strongly Agree
+",1,0,1,1,Strongly Agree,"Strongly Agree
+",0,1,0,1
+22 - 25,Female,Prefer not to say,SUSS,West,Choa Chu Kang,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Neutral,Disagree,0,0,1,1,Agree,Agree,0,0,0,0
+22 - 25,Male,Below $500,SMU,North,Woodlands,Full-time Student,Not employed,Yes,Yes,1,1,1,Strongly Agree,Agree,Agree,Agree,Strongly Agree,Agree,0,0,1,1,Neutral,Neutral,1,1,1,1
+22 - 25,Female,Below $500,SMU,Central,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Neutral,Neutral,1,1,0,1
+22 - 25,Female,"$501 - $1,000",NUS,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,1,Strongly Agree,Agree,0,0,0,1
+22 - 25,Prefer not to say,Prefer not to say,NYP,West,Choa Chu Kang,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,1,1,0,0
+22 - 25,Female,Below $500,NUS,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,1,1,1,Neutral,Neutral,1,1,0,2
+22 - 25,Female,Below $500,SUSS,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Agree,0,0,1,1,Neutral,Neutral,0,0,0,2
+18 - 21,Female,Prefer not to say,NTU,East,Tampines,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Neutral,Neutral,Neutral,Neutral,0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Female,"$501 - $1,000",SMU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Disagree,Agree,"Strongly Agree
+",0,0,0,0,Disagree,Disagree,0,0,0,1
+22 - 25,Male,"$501 - $1,000","Griffith University, Gold Coast",East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Agree,Agree,Neutral,Neutral,0,0,0,0,Neutral,Disagree,0,0,0,0
+22 - 25,Female,Prefer not to say,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Agree,0,0,0,0,Agree,Agree,1,1,0,1
+22 - 25,Female,">$3,001",NUS,North,Woodlands,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Agree,Agree,1,0,0,1
+22 - 25,Female,"$2,001 - $3,000",SP,West,Jurong West,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Neutral,Agree,Agree,0,0,1,0,Agree,Agree,0,0,0,0
+18 - 21,Female,Below $500,NP,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,0,0,Agree,Agree,0,0,0,0
+22 - 25,Female,"$1,001 - $2,000
+",SMU,East,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,0,0,0,1
+22 - 25,Female,"$501 - $1,000",SMU,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Strongly Agree,Agree,1,1,0,0,Strongly Agree,"Strongly Agree
+",1,1,0,2
+>29,Female,Prefer not to say,NTU,East,Ubi,Full-time Student,Not employed,Yes,No,1,1,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Disagree,Neutral,1,0,0,1
+22 - 25,Male,"$501 - $1,000",NTU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Neutral,Strongly Agree,"Strongly Agree
+",0,0,0,1,Neutral,"Strongly Agree
+",1,1,0,0
+18 - 21,Female,Prefer not to say,NTU,East,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Neutral,Neutral,Agree,0,0,1,1,Agree,Neutral,0,0,0,1
+18 - 21,Female,Below $500,ITE College Central,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Neutral,0,1,1,1,Agree,Agree,0,0,0,1
+22 - 25,Female,Below $500,NTU,West,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Disagree,Neutral,Agree,Agree,Agree,0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Female,Below $500,NTU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Neutral,0,0,1,0,Strongly Agree,Agree,0,1,1,1
+22 - 25,Female,"$501 - $1,000",NTU,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Disagree,Disagree,Agree,Agree,0,0,0,0,Neutral,Neutral,1,0,0,2
+22 - 25,Male,">$3,001",NUS,Central,Bishan,Part-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,0,0,0,2
+22 - 25,Male,Below $500,SMU,Central,Geylang,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,1,1,0,0
+22 - 25,Female,">$3,001",SUSS,West,Choa Chu Kang,Part-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Neutral,Agree,"Strongly Agree
+",1,1,1,0,Neutral,Neutral,1,0,1,0
+22 - 25,Male,Below $500,NTU,West,Jurong West,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Agree,Neutral,Neutral,Neutral,"Strongly Agree
+",1,1,1,1,Disagree,Disagree,1,1,1,0
+18 - 21,Female,Below $500,NTU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Agree,Agree,Agree,"Strongly Agree
+",0,0,0,1,Disagree,Disagree,1,1,0,1
+18 - 21,Female,Below $500,NUS,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,0,0,0,Agree,Agree,1,0,0,1
+22 - 25,Female,Below $500,SMU,North-East,Hougang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,Agree,Agree,0,0,0,0,Strongly Agree,"Strongly Agree
+",0,0,0,0
+18 - 21,Female,Below $500,RP,North,Sembawang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Agree,Agree,0,1,0,1
+22 - 25,Female,Below $500,SMU,Central,Bukit Timah,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,1,1,1,1,Neutral,Agree,0,1,0,0
+22 - 25,Male,Prefer not to say,NTU,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Neutral,Neutral,Strongly Agree,Agree,0,0,1,0,Agree,Agree,0,0,0,0
+22 - 25,Male,"$501 - $1,000",SMU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,"Strongly Agree
+",0,0,0,0,Neutral,Agree,0,0,1,2
+22 - 25,Female,Prefer not to say,NUS,Central,Bukit Timah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Strongly Agree,"Strongly Agree
+",0,0,0,0,Strongly Disagree,"Strongly Disagree
+",0,0,0,0
+18 - 21,Male,Below $500,SP,Central,Kallang / Whampao,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,1,1,1,Agree,Agree,0,0,1,0
+22 - 25,Female,"$501 - $1,000",SMU,Central,Bishan,Part-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",1,1,1,0,Strongly Agree,"Strongly Agree
+",1,0,0,2
+22 - 25,Male,"$2,001 - $3,000",NTU,Central,Toa Payoh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,0,Neutral,Neutral,1,1,1,1
+22 - 25,Male,Below $500,SMU,North-East,Serangoon,Full-time Student,Not employed,Yes,Yes,0,1,0,Agree,Neutral,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,1,1,0,1
+22 - 25,Male,Below $500,SMU,North-East,Hougang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Strongly Agree,"Strongly Agree
+",0,0,1,1,Agree,Agree,1,0,0,0
+22 - 25,Female,Below $500,NTU,North-East,Potong Pasir,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,0,1,0,Agree,Agree,1,0,1,1
+22 - 25,Female,Below $500,NYP,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,"Strongly Agree
+",Disagree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Strongly Disagree,"Strongly Disagree
+",1,1,1,2
+18 - 21,Female,Below $500,NTU,East,Bedok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,0,0,2
+26 - 29,Male,"$501 - $1,000",SMU,Central,Bukit Timah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Neutral,Neutral,0,0,0,0
+22 - 25,Male,Below $500,NTU,North-East,Woodleigh,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Strongly Agree,Agree,0,0,1,0,Disagree,Disagree,0,1,1,1
+18 - 21,Female,Below $500,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Agree,Neutral,1,1,1,0,Agree,Agree,0,0,0,1
+18 - 21,Female,"$501 - $1,000",SMU,North-East,Ang Mo Kio,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,"Strongly Agree
+",0,0,1,1,Neutral,Neutral,0,0,0,2
+22 - 25,Male,"$501 - $1,000",SMU,Central,Bishan,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,Neutral,Agree,Agree,0,1,1,0,Neutral,Agree,1,1,1,2
+22 - 25,Male,"$501 - $1,000",SMU,West,Bukit Batok,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",0,1,1,1,Strongly Agree,"Strongly Agree
+",1,1,1,2
+22 - 25,Female,Below $500,SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Strongly Disagree,"Strongly Agree
+",Agree,Agree,0,1,1,0,Agree,"Strongly Agree
+",1,0,1,0
+18 - 21,Female,Below $500,SMU,North-East,Sengkang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Neutral,Agree,1,1,1,1,Agree,Agree,0,1,0,1
+22 - 25,Female,Below $500,SMU,West,Yew Tee,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Disagree,Neutral,Neutral,Agree,Agree,0,0,1,1,Agree,Agree,0,1,1,1
+18 - 21,Male,"$2,001 - $3,000",SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Strongly Agree,Neutral,Strongly Agree,"Strongly Agree
+",0,0,0,1,Neutral,Agree,0,0,0,1
+22 - 25,Female,Below $500,NTU,North-East,Ang Mo Kio,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,1,1,1,Agree,Agree,1,1,1,2
+22 - 25,Male,"$501 - $1,000",SMU,East,Pasir Ris,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Strongly Agree,"Strongly Agree
+",Agree,Agree,0,0,1,0,Strongly Agree,"Strongly Agree
+",0,0,1,0
+22 - 25,Female,Prefer not to say,SMU,West,Choa Chu Kang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Neutral,Neutral,0,0,0,0
+18 - 21,Female,Prefer not to say,NTU,North-East,Punggol,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Neutral,Disagree,Agree,Agree,0,0,0,0,Agree,"Strongly Agree
+",0,0,0,1
+18 - 21,Female,Below $500,SP,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Disagree,Disagree,Disagree,Neutral,Neutral,0,0,0,0,Agree,Agree,0,0,0,0
+18 - 21,Female,Below $500,NTU,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Disagree,Agree,Strongly Agree,"Strongly Agree
+",0,0,0,0,Agree,Agree,1,1,1,0
+22 - 25,Female,Below $500,SMU,North,Woodlands,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Neutral,Neutral,Agree,Neutral,Agree,"Strongly Agree
+",0,0,0,0,Neutral,Neutral,0,0,0,1
+22 - 25,Female,Below $500,NUS,West,Clementi,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Disagree,Agree,Agree,Disagree,Agree,Disagree,0,0,0,0,Disagree,Disagree,0,0,0,0
+18 - 21,Female,"$501 - $1,000",Monash University,West,Prefer not to say,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Agree,Agree,Agree,0,0,1,1,Agree,Agree,0,0,0,1
+18 - 21,Female,Below $500,SMU,North,Yishun,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Disagree,Agree,Agree,Agree,0,0,0,1,Disagree,Agree,1,1,0,1
+>29,Female,">$3,001",NTU,East,Paya Lebar,Full-time Student,Employed Full-time,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Agree,Agree,Agree,1,1,1,1,Neutral,Agree,1,1,1,1
+18 - 21,Female,Below $500,SMU,North-East,Serangoon,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Neutral,Neutral,Neutral,Neutral,0,0,1,1,Agree,"Strongly Agree
+",0,0,1,1
+22 - 25,Male,"$501 - $1,000",SMU,East,Katong,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Strongly Agree,"Strongly Agree
+",Strongly Agree,Agree,1,1,1,1,Neutral,Neutral,0,0,0,0
+18 - 21,Female,Below $500,NUS,West,Bukit Panjang,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,"Strongly Agree
+",Agree,Neutral,Agree,Agree,1,1,1,1,Agree,Agree,0,0,0,0
+22 - 25,Female,Below $500,SMU,Central,Bukit Timah,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Disagree,Agree,Neutral,0,0,1,1,Neutral,Agree,0,1,0,0
+18 - 21,Female,Prefer not to say,SMU,Central,Marine Parade,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Strongly Agree,Agree,Agree,"Strongly Agree
+",Strongly Agree,Agree,1,1,1,0,Neutral,"Strongly Agree
+",1,1,0,0
+22 - 25,Male,"$501 - $1,000",NUS,North-East,Hougang,Full-time Student,Not employed,Yes,No,1,0,0,Neutral,Neutral,Agree,Agree,Agree,Neutral,0,0,1,1,Neutral,Neutral,0,0,0,0
+22 - 25,Female,"$1,001 - $2,000
+",NUS,East,Tampines,Full-time Student,Employed Part-time,Have not rent before,Have not rent before,0,0,0,Agree,Neutral,Agree,"Strongly Agree
+",Strongly Agree,Agree,0,0,1,0,Disagree,Disagree,0,0,1,1
+18 - 21,Female,Below $500,NTU,North-East,Ang Mo Kio,Full-time Student,Not employed,Have not rent before,Have not rent before,0,0,0,Agree,Agree,Agree,Agree,Agree,Agree,0,0,0,0,Neutral,Neutral,0,0,0,2

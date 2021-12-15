@@ -1,0 +1,3 @@
+"0",""
+"0","#Perceived Overall Quality Score"
+"0","ggplot(agg_taxi_2016_2019_comparison_PA, aes(planning_area, perceived_overall_quality_score,  fill=year), xlab=""Age Group"") + geom_bar(stat=""identity"", position=""dodge"", width=.6) + scale_x_discrete(labels=abbreviate) + geom_text(aes(label=round(perceived_overall_quality_score, 1)), vjust=0, size=3) + labs(title=""Comparison of Perceived Overall Quality Scores (Taxi) from 2016 to 2019"")"

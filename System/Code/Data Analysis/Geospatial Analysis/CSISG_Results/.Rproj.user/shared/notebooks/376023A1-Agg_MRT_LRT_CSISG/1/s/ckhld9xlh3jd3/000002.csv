@@ -1,0 +1,7 @@
+"0","#agg_mrt_overall_PA_mpsz3414_csv <- agg_mrt_overall_PA_mpsz3414 %>%"
+"0","#  dplyr::select(1,3:7) %>%"
+"0","#  st_set_geometry(NULL)"
+"0","#"
+"0","#agg_mrt_overall_PA_mpsz3414_csv$PLN_AREA_N <- sub(""^"", ""Singapore, "", #agg_mrt_overall_PA_mpsz3414_csv$PLN_AREA_N)"
+"0","#"
+"0","#write.csv(agg_mrt_overall_PA_mpsz3414_csv, #""data/aspatial/agg_mrt_overall_PowerBI.csv"", row.names = FALSE)"

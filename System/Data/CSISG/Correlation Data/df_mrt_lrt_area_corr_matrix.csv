@@ -1,0 +1,182 @@
+planning_area,,year,weight_of_market_share,customer_expectations_score,perceived_overall_quality_score,perceived_value_score,customer_satisfaction_score,customer_loyalty‎_user_trust_score
+ANG MO KIO,year,1.0,0.0,0.0,0.0,0.0,-0.45,-0.89
+ANG MO KIO,weight_of_market_share,0.0,1.0,0.95,-0.6,-0.6,0.4,-0.4
+ANG MO KIO,customer_loyalty‎_user_trust_score,-0.89,-0.4,-0.32,0.4,0.4,0.4,1.0
+ANG MO KIO,train_agg_service_info,0.89,0.2,0.32,0.2,0.2,0.0,-0.8
+ANG MO KIO,train_agg_customer_service,0.94,-0.11,0.0,0.32,0.32,-0.21,-0.74
+ANG MO KIO,train_agg_convenience,0.71,0.32,0.5,0.32,0.32,0.32,-0.63
+ANG MO KIO,train_agg_comfort,0.94,-0.11,0.0,0.32,0.32,-0.21,-0.74
+ANG MO KIO,train_agg_safety,-0.45,0.4,0.63,0.4,0.4,1.0,0.4
+BEDOK,year,1.0,-0.67,-0.02,-0.06,0.55,-0.68,-0.44
+BEDOK,weight_of_market_share,-0.67,1.0,0.34,0.07,-0.27,0.71,0.56
+BEDOK,customer_loyalty‎_user_trust_score,-0.44,0.56,0.31,0.64,0.13,0.9,1.0
+BEDOK,train_agg_service_info,0.91,-0.73,0.05,0.05,0.52,-0.65,-0.53
+BEDOK,train_agg_customer_service,0.73,-0.91,-0.14,0.2,0.36,-0.55,-0.43
+BEDOK,train_agg_convenience,0.75,-0.47,0.49,0.54,0.62,-0.17,-0.09
+BEDOK,train_agg_comfort,0.91,-0.71,0.22,0.25,0.48,-0.51,-0.36
+BEDOK,train_agg_safety,-0.4,0.42,0.65,0.76,0.22,0.76,0.55
+BISHAN,year,1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0
+BISHAN,weight_of_market_share,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BISHAN,customer_loyalty‎_user_trust_score,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BISHAN,train_agg_service_info,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BISHAN,train_agg_customer_service,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BISHAN,train_agg_convenience,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BISHAN,train_agg_comfort,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BISHAN,train_agg_safety,-1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT BATOK,year,1.0,0.01,-0.5,-0.26,-0.58,-0.51,-0.09
+BUKIT BATOK,weight_of_market_share,0.01,1.0,0.14,0.25,0.34,-0.24,0.18
+BUKIT BATOK,customer_loyalty‎_user_trust_score,-0.09,0.18,-0.45,0.56,0.19,0.2,1.0
+BUKIT BATOK,train_agg_service_info,0.88,-0.14,-0.44,-0.24,-0.42,-0.16,-0.14
+BUKIT BATOK,train_agg_customer_service,0.49,0.13,-0.68,0.59,-0.17,0.08,0.43
+BUKIT BATOK,train_agg_convenience,0.48,0.11,-0.78,0.25,0.18,0.37,0.34
+BUKIT BATOK,train_agg_comfort,0.88,0.22,-0.53,-0.05,-0.41,-0.26,0.0
+BUKIT BATOK,train_agg_safety,-0.56,0.22,0.14,0.66,0.49,0.42,0.16
+BUKIT MERAH,year,1.0,0.0,-0.29,-0.29,0.58,-0.32,-0.29
+BUKIT MERAH,weight_of_market_share,0.0,1.0,0.67,-0.67,0.45,-0.75,-0.22
+BUKIT MERAH,customer_loyalty‎_user_trust_score,-0.29,-0.22,0.3,-0.3,-0.8,0.11,1.0
+BUKIT MERAH,train_agg_service_info,-0.65,0.0,-0.34,0.67,0.11,0.62,-0.22
+BUKIT MERAH,train_agg_customer_service,-0.44,-0.34,-0.67,0.87,0.1,0.86,-0.21
+BUKIT MERAH,train_agg_convenience,-0.91,0.0,0.21,0.21,-0.58,0.41,0.53
+BUKIT MERAH,train_agg_comfort,-0.3,-0.47,-0.79,0.95,0.16,0.88,-0.32
+BUKIT MERAH,train_agg_safety,-0.65,-0.5,-0.45,0.89,-0.22,0.75,-0.22
+BUKIT PANJANG,year,1.0,-0.38,-0.2,0.25,0.23,-0.04,-0.09
+BUKIT PANJANG,weight_of_market_share,-0.38,1.0,0.42,-0.01,0.07,0.2,-0.17
+BUKIT PANJANG,customer_loyalty‎_user_trust_score,-0.09,-0.17,0.13,0.18,0.24,0.44,1.0
+BUKIT PANJANG,train_agg_service_info,0.83,-0.46,-0.21,0.43,0.36,0.22,0.25
+BUKIT PANJANG,train_agg_customer_service,0.83,-0.41,-0.09,0.4,0.36,0.19,0.02
+BUKIT PANJANG,train_agg_convenience,0.8,-0.4,-0.11,0.42,0.4,0.27,0.12
+BUKIT PANJANG,train_agg_comfort,0.85,-0.45,-0.13,0.39,0.29,0.17,0.05
+BUKIT PANJANG,train_agg_safety,0.09,0.01,0.2,0.39,0.41,0.45,0.08
+CHOA CHU KANG,year,1.0,0.6,0.47,0.64,0.48,0.53,0.36
+CHOA CHU KANG,weight_of_market_share,0.6,1.0,0.38,0.7,0.44,0.33,0.17
+CHOA CHU KANG,customer_loyalty‎_user_trust_score,0.36,0.17,0.42,0.11,0.5,0.62,1.0
+CHOA CHU KANG,train_agg_service_info,0.84,0.54,0.58,0.8,0.52,0.65,0.39
+CHOA CHU KANG,train_agg_customer_service,0.77,0.36,0.63,0.53,0.74,0.61,0.71
+CHOA CHU KANG,train_agg_convenience,0.8,0.48,0.7,0.69,0.81,0.78,0.52
+CHOA CHU KANG,train_agg_comfort,0.9,0.64,0.29,0.61,0.43,0.56,0.57
+CHOA CHU KANG,train_agg_safety,0.54,0.43,0.74,0.42,0.71,0.63,0.57
+CLEMENTI,year,1.0,0.22,-0.34,-0.11,-0.34,-0.11,0.89
+CLEMENTI,weight_of_market_share,0.22,1.0,0.0,-0.1,-0.9,-0.1,0.6
+CLEMENTI,customer_loyalty‎_user_trust_score,0.89,0.6,-0.4,-0.3,-0.7,-0.3,1.0
+CLEMENTI,train_agg_service_info,0.8,0.05,0.05,0.41,0.05,0.41,0.56
+CLEMENTI,train_agg_customer_service,0.65,-0.05,0.21,0.58,0.21,0.58,0.37
+CLEMENTI,train_agg_convenience,0.78,0.2,0.2,0.5,-0.1,0.5,0.6
+CLEMENTI,train_agg_comfort,0.88,0.34,-0.22,0.11,-0.22,0.11,0.78
+CLEMENTI,train_agg_safety,0.0,0.67,0.67,0.45,-0.67,0.45,0.22
+GEYLANG,year,1.0,0.24,0.0,-0.45,-0.89,-0.89,-0.89
+GEYLANG,weight_of_market_share,0.24,1.0,-0.63,-0.95,-0.63,-0.63,-0.63
+GEYLANG,customer_loyalty‎_user_trust_score,-0.89,-0.63,0.2,0.8,1.0,1.0,1.0
+GEYLANG,train_agg_service_info,0.58,0.54,0.26,-0.77,-0.77,-0.77,-0.77
+GEYLANG,train_agg_customer_service,0.24,-0.78,0.21,0.74,0.21,0.21,0.21
+GEYLANG,train_agg_convenience,-0.71,-0.83,0.32,0.95,0.95,0.95,0.95
+GEYLANG,train_agg_comfort,-0.94,-0.39,-0.11,0.63,0.95,0.95,0.95
+GEYLANG,train_agg_safety,0.0,-0.94,0.45,0.89,0.45,0.45,0.45
+HOUGANG,year,1.0,0.16,0.42,-0.07,-0.03,-0.24,-0.44
+HOUGANG,weight_of_market_share,0.16,1.0,-0.15,-0.32,-0.36,-0.52,-0.33
+HOUGANG,customer_loyalty‎_user_trust_score,-0.44,-0.33,-0.06,0.08,0.47,-0.13,1.0
+HOUGANG,train_agg_service_info,0.75,0.2,0.3,-0.37,0.01,-0.25,-0.23
+HOUGANG,train_agg_customer_service,0.67,0.27,0.52,-0.51,-0.36,0.02,-0.18
+HOUGANG,train_agg_convenience,0.78,-0.02,0.53,-0.2,-0.18,0.09,-0.23
+HOUGANG,train_agg_comfort,0.77,0.28,0.46,-0.25,-0.26,-0.06,-0.29
+HOUGANG,train_agg_safety,0.29,-0.58,0.35,0.31,-0.09,0.56,0.03
+JURONG EAST,year,1.0,0.95,-0.95,-0.21,-0.74,-0.74,-0.74
+JURONG EAST,weight_of_market_share,0.95,1.0,-0.8,-0.4,-0.6,-0.6,-0.6
+JURONG EAST,customer_loyalty‎_user_trust_score,-0.74,-0.6,0.8,0.4,1.0,1.0,1.0
+JURONG EAST,train_agg_service_info,1.0,0.95,-0.95,-0.21,-0.74,-0.74,-0.74
+JURONG EAST,train_agg_customer_service,0.95,0.8,-1.0,0.0,-0.8,-0.8,-0.8
+JURONG EAST,train_agg_convenience,0.89,0.95,-0.74,-0.63,-0.74,-0.74,-0.74
+JURONG EAST,train_agg_comfort,0.95,1.0,-0.8,-0.4,-0.6,-0.6,-0.6
+JURONG EAST,train_agg_safety,-0.54,-0.77,0.26,0.77,0.26,0.26,0.26
+JURONG WEST,year,1.0,-0.27,0.18,0.08,0.26,-0.34,0.04
+JURONG WEST,weight_of_market_share,-0.27,1.0,-0.3,0.29,-0.17,0.38,0.09
+JURONG WEST,customer_loyalty‎_user_trust_score,0.04,0.09,0.32,0.16,0.14,0.6,1.0
+JURONG WEST,train_agg_service_info,0.64,0.11,0.27,0.39,0.54,0.33,0.34
+JURONG WEST,train_agg_customer_service,0.68,0.12,0.38,0.56,0.58,0.25,0.1
+JURONG WEST,train_agg_convenience,0.59,-0.01,0.39,0.35,0.59,0.43,0.47
+JURONG WEST,train_agg_comfort,0.91,-0.26,0.32,0.22,0.35,-0.13,0.01
+JURONG WEST,train_agg_safety,0.26,0.21,0.77,0.95,0.69,0.5,0.19
+PASIR RIS,year,1.0,0.28,0.34,0.43,0.25,0.25,0.68
+PASIR RIS,weight_of_market_share,0.28,1.0,0.87,0.14,0.55,0.29,0.46
+PASIR RIS,customer_loyalty‎_user_trust_score,0.68,0.46,0.49,0.09,0.43,0.31,1.0
+PASIR RIS,train_agg_service_info,0.94,0.46,0.52,0.64,0.41,0.41,0.67
+PASIR RIS,train_agg_customer_service,0.85,0.51,0.7,0.75,0.64,0.64,0.55
+PASIR RIS,train_agg_convenience,0.85,0.51,0.7,0.75,0.64,0.64,0.55
+PASIR RIS,train_agg_comfort,0.85,0.51,0.7,0.75,0.64,0.64,0.55
+PASIR RIS,train_agg_safety,0.49,0.31,0.5,0.97,0.5,0.62,0.12
+PUNGGOL,year,1.0,-0.37,0.07,-0.07,-0.05,-0.06,-0.26
+PUNGGOL,weight_of_market_share,-0.37,1.0,-0.17,-0.39,-0.23,-0.27,-0.21
+PUNGGOL,customer_loyalty‎_user_trust_score,-0.26,-0.21,0.35,0.65,0.66,0.83,1.0
+PUNGGOL,train_agg_service_info,0.36,-0.46,0.39,0.45,0.41,0.59,0.44
+PUNGGOL,train_agg_customer_service,-0.01,-0.43,0.3,0.63,0.47,0.72,0.69
+PUNGGOL,train_agg_convenience,0.11,-0.26,0.01,0.6,0.35,0.62,0.4
+PUNGGOL,train_agg_comfort,0.26,-0.5,0.28,0.57,0.49,0.63,0.56
+PUNGGOL,train_agg_safety,0.17,-0.36,0.33,0.69,0.72,0.73,0.6
+QUEENSTOWN,weight_of_market_share,,1.0,-1.0,-1.0,-1.0,-1.0,-1.0
+QUEENSTOWN,customer_loyalty‎_user_trust_score,,-1.0,1.0,1.0,1.0,1.0,1.0
+QUEENSTOWN,train_agg_service_info,,-1.0,1.0,1.0,1.0,1.0,1.0
+QUEENSTOWN,train_agg_customer_service,,-1.0,1.0,1.0,1.0,1.0,1.0
+QUEENSTOWN,train_agg_convenience,,-1.0,1.0,1.0,1.0,1.0,1.0
+QUEENSTOWN,train_agg_comfort,,-1.0,1.0,1.0,1.0,1.0,1.0
+QUEENSTOWN,train_agg_safety,,-1.0,1.0,1.0,1.0,1.0,1.0
+ROCHOR,year,1.0,-1.0,-1.0,-1.0,1.0,-1.0,1.0
+ROCHOR,weight_of_market_share,-1.0,1.0,1.0,1.0,-1.0,1.0,-1.0
+ROCHOR,customer_loyalty‎_user_trust_score,1.0,-1.0,-1.0,-1.0,1.0,-1.0,1.0
+ROCHOR,train_agg_service_info,1.0,-1.0,-1.0,-1.0,1.0,-1.0,1.0
+ROCHOR,train_agg_customer_service,-1.0,1.0,1.0,1.0,-1.0,1.0,-1.0
+ROCHOR,train_agg_safety,-1.0,1.0,1.0,1.0,-1.0,1.0,-1.0
+SEMBAWANG,year,1.0,0.87,0.87,-0.87,0.0,-0.87,0.0
+SEMBAWANG,weight_of_market_share,0.87,1.0,0.5,-1.0,-0.5,-1.0,-0.5
+SEMBAWANG,customer_loyalty‎_user_trust_score,0.0,-0.5,0.5,0.5,1.0,0.5,1.0
+SEMBAWANG,train_agg_service_info,-0.5,-0.87,0.0,0.87,0.87,0.87,0.87
+SEMBAWANG,train_agg_customer_service,-0.5,-0.87,0.0,0.87,0.87,0.87,0.87
+SEMBAWANG,train_agg_convenience,0.5,0.0,0.87,0.0,0.87,0.0,0.87
+SEMBAWANG,train_agg_comfort,-0.5,-0.87,0.0,0.87,0.87,0.87,0.87
+SEMBAWANG,train_agg_safety,0.5,0.0,0.87,0.0,0.87,0.0,0.87
+SENGKANG,year,1.0,-0.2,0.08,-0.22,0.15,-0.21,0.13
+SENGKANG,weight_of_market_share,-0.2,1.0,0.09,-0.13,-0.34,-0.21,-0.35
+SENGKANG,customer_loyalty‎_user_trust_score,0.13,-0.35,-0.0,0.29,0.4,0.49,1.0
+SENGKANG,train_agg_service_info,0.79,-0.5,0.25,0.09,0.3,0.12,0.42
+SENGKANG,train_agg_customer_service,0.78,-0.37,0.08,-0.02,0.36,-0.0,0.53
+SENGKANG,train_agg_convenience,0.55,-0.5,0.24,0.27,0.41,0.36,0.47
+SENGKANG,train_agg_comfort,0.77,-0.48,0.1,0.12,0.4,0.13,0.43
+SENGKANG,train_agg_safety,-0.1,-0.21,0.43,0.76,0.51,0.78,0.42
+SERANGOON,year,1.0,-0.11,0.19,-0.15,0.11,-0.11,0.22
+SERANGOON,weight_of_market_share,-0.11,1.0,-0.73,-0.37,-0.59,-0.4,-0.81
+SERANGOON,customer_loyalty‎_user_trust_score,0.22,-0.81,0.67,0.72,0.66,0.31,1.0
+SERANGOON,train_agg_service_info,0.81,-0.2,0.4,0.29,0.07,0.35,0.38
+SERANGOON,train_agg_customer_service,0.8,-0.01,0.26,0.37,0.2,0.22,0.37
+SERANGOON,train_agg_convenience,0.65,0.02,0.35,0.3,0.12,0.54,0.14
+SERANGOON,train_agg_comfort,0.88,0.04,0.21,0.07,-0.06,0.11,0.16
+SERANGOON,train_agg_safety,-0.18,-0.33,0.66,0.82,0.61,0.77,0.53
+TAMPINES,year,1.0,-0.36,0.13,0.22,0.37,0.01,0.22
+TAMPINES,weight_of_market_share,-0.36,1.0,0.42,0.4,0.33,0.52,0.07
+TAMPINES,customer_loyalty‎_user_trust_score,0.22,0.07,0.09,0.25,0.38,0.21,1.0
+TAMPINES,train_agg_service_info,0.4,-0.12,-0.02,0.18,0.46,0.44,0.2
+TAMPINES,train_agg_customer_service,0.43,0.02,0.32,0.29,0.3,0.53,0.2
+TAMPINES,train_agg_convenience,0.53,-0.18,0.02,0.44,0.41,0.38,0.54
+TAMPINES,train_agg_comfort,0.6,-0.14,0.07,0.32,0.33,0.31,0.31
+TAMPINES,train_agg_safety,0.15,0.54,0.26,0.7,0.75,0.71,0.33
+TOA PAYOH,year,1.0,-0.91,0.0,0.0,-0.59,-0.58,-0.29
+TOA PAYOH,weight_of_market_share,-0.91,1.0,0.16,0.0,0.81,0.47,0.32
+TOA PAYOH,customer_loyalty‎_user_trust_score,-0.29,0.32,0.8,0.3,0.56,0.9,1.0
+TOA PAYOH,train_agg_service_info,0.87,-0.79,0.3,0.0,-0.41,-0.1,0.2
+TOA PAYOH,train_agg_customer_service,0.76,-0.92,0.11,0.32,-0.65,-0.21,-0.05
+TOA PAYOH,train_agg_convenience,0.89,-0.89,0.21,0.05,-0.55,-0.15,0.1
+TOA PAYOH,train_agg_comfort,0.89,-0.89,0.05,0.36,-0.55,-0.62,-0.36
+TOA PAYOH,train_agg_safety,-0.3,0.0,0.26,0.21,-0.05,0.79,0.63
+WOODLANDS,year,1.0,0.52,-0.06,0.12,0.07,-0.12,-0.07
+WOODLANDS,weight_of_market_share,0.52,1.0,-0.28,0.01,0.49,-0.32,-0.07
+WOODLANDS,customer_loyalty‎_user_trust_score,-0.07,-0.07,0.46,0.43,0.17,0.66,1.0
+WOODLANDS,train_agg_service_info,0.78,0.6,0.23,0.16,0.13,0.21,0.25
+WOODLANDS,train_agg_customer_service,0.73,0.43,0.16,0.39,0.23,0.15,0.17
+WOODLANDS,train_agg_convenience,0.72,0.36,0.34,0.04,-0.02,0.41,0.31
+WOODLANDS,train_agg_comfort,0.86,0.39,0.21,0.07,-0.15,0.15,0.0
+WOODLANDS,train_agg_safety,-0.38,0.08,0.53,-0.05,0.19,0.52,0.28
+YISHUN,year,1.0,0.16,0.19,-0.27,-0.31,-0.54,0.28
+YISHUN,weight_of_market_share,0.16,1.0,0.04,0.49,0.1,0.45,0.57
+YISHUN,customer_loyalty‎_user_trust_score,0.28,0.57,0.23,0.49,0.37,0.52,1.0
+YISHUN,train_agg_service_info,0.78,0.19,0.61,-0.12,-0.14,-0.32,0.43
+YISHUN,train_agg_customer_service,0.7,0.27,0.59,-0.17,-0.17,-0.26,0.41
+YISHUN,train_agg_convenience,0.66,0.16,0.48,-0.13,-0.03,-0.13,0.42
+YISHUN,train_agg_comfort,0.88,0.34,0.35,-0.18,-0.22,-0.38,0.41
+YISHUN,train_agg_safety,-0.41,0.04,0.2,0.55,0.66,0.71,0.26

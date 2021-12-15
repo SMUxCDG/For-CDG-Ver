@@ -1,0 +1,252 @@
+---
+title: "Clustering_Results"
+author: "Shermin Tan"
+date: "10/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Getting Started
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+packages = c('sp', 'rgdal', 'sf', 'tidyverse', 'tmap', 'ggplot2','stringr', 'maptools', 'raster', 'spatstat', 'sfheaders', 'dplyr')
+for(p in packages){
+  if(!require(p, character.only = T)){
+    install.packages(p)
+  }
+  library(p, character.only = T)
+}
+```
+
+#Import Data
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+mpsz = st_read(dsn = "data/geospatial", layer = "MP14_SUBZONE_WEB_PL")
+agg_clusters <- read_csv("data/aspatial/agg_clustering_perception.csv")
+resident_edu <- read_csv("data/aspatial/(Education) Students Aged 5 Years and Over by Planning Area (2020).csv")
+```
+
+#Data Cleaning and Segmentation
+
+##Singapore Planning Area w/ Geometry Points
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#transform CRS = 3414
+mpsz_3414 <- st_set_crs(mpsz, 3414)
+
+mpsz_3414_plnarea <- mpsz_3414 %>%
+  group_by(PLN_AREA_N) %>%
+  summarise()
+```
+
+##Tertiary Students by Planning Area (2020)
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+resident_edu <- na.omit(resident_edu)
+
+tertiary_students <- resident_edu %>%
+  mutate(`Planning Area of Residence CAPS` = toupper(`Planning Area of Residence`)) %>%
+  dplyr::select('Planning Area of Residence CAPS', 'Polytechnic Diploma', 'Professional Qualification and Other Diploma', 'University')
+
+tertiary_students <- tertiary_students %>%
+  mutate(`Total` = rowSums(.[2:4])) %>%
+  dplyr::select('Planning Area of Residence CAPS', 'Total')
+```
+
+##Agg_Clusters Cleaning
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+agg_clusters <- agg_clusters %>%
+  #remove location == "Prefer not to say"
+  subset(location != "Prefer not to say")
+
+agg_clusters_CLEAN <- agg_clusters %>%
+  #change to upper CAPS for location
+  mutate(LOCATION = toupper(location)) %>%
+  mutate(REGION = toupper(region)) %>%
+  #remove unwanted columns
+  dplyr::select(2, 29:31) %>%
+
+#rename some location to proper planning areas naming convention
+agg_clusters_CLEAN$LOCATION <- gsub("KALLANG / WHAMPAO", "KALLANG", agg_clusters_CLEAN$LOCATION)
+agg_clusters_CLEAN$LOCATION <- gsub("CENTRAL AREA / CBD", "DOWNTOWN CORE", agg_clusters_CLEAN$LOCATION)
+```
+
+
+#Initial Test w/o Population Mean (Results Based on Percentage of Survey Respondents)
+
+##Filtering and Mapping by Clusters
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#merge with mpsz_3414
+mpsz_3414_agg_clusters <- left_join(mpsz_3414_plnarea, agg_clusters_CLEAN, by = c("PLN_AREA_N" = "LOCATION"))
+
+#Split clusters
+
+#Cluster 0
+cluster0_mpsz3414 <- mpsz_3414_agg_clusters %>%
+  filter(cluster == 0) %>%
+  mutate(count = 1)
+#Frequency of No. of Respondents in each Plan Area
+cluster0_mpsz3414_PAfreq <- cluster0_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  count(PLN_AREA_N, count) %>%
+  mutate(freq = ifelse(is.na(count), NA, n)) %>%
+  #Percentage of respondents of Cluster 0 by Plan Area
+  #scales::percent(freq/318, accuracy=0.001))
+  mutate(freq_percentage = round(freq/318*100, 2))
+
+
+#Cluster 1
+cluster1_mpsz3414 <- mpsz_3414_agg_clusters %>%
+  filter(cluster == 1) %>%
+  mutate(count = 1)
+#Frequency of No. of Respondents in each Plan Area
+cluster1_mpsz3414_PAfreq <- cluster1_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  count(PLN_AREA_N, count) %>%
+  mutate(freq = ifelse(is.na(count), NA, n)) %>%
+  #Percentage of respondents of Cluster 1 by Plan Area
+  #scales::percent(freq/318, accuracy=0.001))
+  mutate(freq_percentage = round(freq/318*100, 2))
+
+
+#Cluster 2
+cluster2_mpsz3414 <- mpsz_3414_agg_clusters %>%
+  filter(cluster == 2) %>%
+  mutate(count = 1)
+#Frequency of No. of Respondents in each Plan Area
+cluster2_mpsz3414_PAfreq <- cluster2_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  count(PLN_AREA_N, count) %>%
+  mutate(freq = ifelse(is.na(count), NA, n)) %>%
+  #Percentage of respondents of Cluster 2 by Plan Area
+  #scales::percent(freq/318, accuracy=0.001))
+  mutate(freq_percentage = round(freq/318*100, 2))
+
+
+#Map Visual
+tmap_mode("view")
+
+#Cluster 0
+tm_shape(cluster0_mpsz3414_PAfreq) + tm_fill("freq_percentage", style = "jenks", n= 6, title = "Cluster 0: Percentage of Respondents") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Cluster 1
+tm_shape(cluster1_mpsz3414_PAfreq) + tm_fill("freq_percentage", style = "jenks", n= 6, title = "Cluster 1: Percentage of Respondents") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Cluster 2
+tm_shape(cluster2_mpsz3414_PAfreq) + tm_fill("freq_percentage", style = "jenks", n= 6, title = "Cluster 2: Percentage of Respondents") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```
+
+
+#Second Test w/ Population Mean
+
+Calculated by: Percentage of Survey Respondents Results (freq/318*100)  x No. of Tertiary Students (in each Planning Area) -> to get an estimated predicted number of tertiary students in each planning area of the respective cluster. 
+
+
+##Filtering and Mapping by Clusters
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Split Clusters
+
+
+#Cluster 0
+#Frequency of No. of Respondents in each Plan Area
+cluster0_mpsz3414_PAfreq_Wpop <- cluster0_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  count(PLN_AREA_N, count) %>%
+  mutate(freq = ifelse(is.na(count), NA, n)) %>%
+  #Percentage of respondents of Cluster 0 by Plan Area
+  #scales::percent(freq/318, accuracy=0.001))
+  mutate(freq_percentage = round(freq/318*100, 2))
+
+#merge with Tertiary Student Population
+cluster0_mpsz3414_PAfreq_Wpop <- left_join(cluster0_mpsz3414_PAfreq_Wpop, tertiary_students, by = c("PLN_AREA_N" = "Planning Area of Residence CAPS"))
+
+#Predict Actual Numbers of Tertiary Students in Cluster 0
+cluster0_mpsz3414_PAfreq_Wpop <- cluster0_mpsz3414_PAfreq_Wpop %>%
+  mutate(predicted_numbers = freq_percentage/100*Total)
+
+#replace NA = 0 : (PAYA LEBAR & DOWNTOWN CORE = NA)
+cluster0_mpsz3414_PAfreq_Wpop$predicted_numbers[is.na(cluster0_mpsz3414_PAfreq_Wpop$predicted_numbers)] <- 0
+
+
+#Cluster 1
+#Frequency of No. of Respondents in each Plan Area
+cluster1_mpsz3414_PAfreq_Wpop <- cluster1_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  count(PLN_AREA_N, count) %>%
+  mutate(freq = ifelse(is.na(count), NA, n)) %>%
+  #Percentage of respondents of Cluster 1 by Plan Area
+  #scales::percent(freq/318, accuracy=0.001))
+  mutate(freq_percentage = round(freq/318*100, 2))
+
+#merge with Tertiary Student Population
+cluster1_mpsz3414_PAfreq_Wpop <- left_join(cluster1_mpsz3414_PAfreq_Wpop, tertiary_students, by = c("PLN_AREA_N" = "Planning Area of Residence CAPS"))
+
+#Predict Actual Numbers of Tertiary Students in Cluster 1
+cluster1_mpsz3414_PAfreq_Wpop <- cluster1_mpsz3414_PAfreq_Wpop %>%
+  mutate(predicted_numbers = freq_percentage/100*Total)
+
+#replace NA = 0 : (PAYA LEBAR = NA)
+cluster1_mpsz3414_PAfreq_Wpop$predicted_numbers[is.na(cluster1_mpsz3414_PAfreq_Wpop$predicted_numbers)] <- 0
+
+
+#Cluster 2
+#Frequency of No. of Respondents in each Plan Area
+cluster2_mpsz3414_PAfreq_Wpop <- cluster2_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  count(PLN_AREA_N, count) %>%
+  mutate(freq = ifelse(is.na(count), NA, n)) %>%
+  #Percentage of respondents of Cluster 2 by Plan Area
+  #scales::percent(freq/318, accuracy=0.001))
+  mutate(freq_percentage = round(freq/318*100, 2))
+
+#merge with Tertiary Student Population
+cluster2_mpsz3414_PAfreq_Wpop <- left_join(cluster2_mpsz3414_PAfreq_Wpop, tertiary_students, by = c("PLN_AREA_N" = "Planning Area of Residence CAPS"))
+
+#Predict Actual Numbers of Tertiary Students in Cluster 2
+cluster2_mpsz3414_PAfreq_Wpop <- cluster2_mpsz3414_PAfreq_Wpop %>%
+  mutate(predicted_numbers = freq_percentage/100*Total)
+
+
+    
+#Map Visual
+tmap_mode("view")
+
+#Cluster 0
+tm_shape(cluster0_mpsz3414_PAfreq_Wpop) + tm_fill("predicted_numbers", style = "jenks", n= 6, title = "Cluster 0: Predicted Numbers of Tertiary Students") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Cluster 1
+tm_shape(cluster1_mpsz3414_PAfreq_Wpop) + tm_fill("predicted_numbers", style = "jenks", n= 6, title = "Cluster 1: Predicted Numbers of Tertiary Students") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Cluster 2
+tm_shape(cluster2_mpsz3414_PAfreq_Wpop) + tm_fill("predicted_numbers", style = "jenks", n= 6, title = "Cluster 2: Predicted Numbers of Tertiary Students") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

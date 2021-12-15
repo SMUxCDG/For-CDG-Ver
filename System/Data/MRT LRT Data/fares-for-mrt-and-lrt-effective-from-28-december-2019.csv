@@ -1,0 +1,40 @@
+fare_type,applicable_time,distance,fare_per_ride
+Single trip,All timings,Up to 3.2 km,170
+Single trip,All timings,3.3 km - 4.2 km,190
+Single trip,All timings,4.3 km - 5.2 km,190
+Single trip,All timings,5.3 km - 6.2 km,190
+Single trip,All timings,6.3 km - 7.2 km,210
+Single trip,All timings,7.3 km - 8.2 km,210
+Single trip,All timings,8.3 km - 9.2 km,210
+Single trip,All timings,9.3 km - 10.2 km,230
+Single trip,All timings,10.3 km - 11.2 km,230
+Single trip,All timings,11.3 km - 12.2 km,250
+Single trip,All timings,12.3 km - 13.2 km,250
+Single trip,All timings,13.3 km - 14.2 km,250
+Single trip,All timings,14.3 km - 15.2 km,250
+Single trip,All timings,15.3 km - 16.2 km,260
+Single trip,All timings,16.3 km - 17.2 km,260
+Single trip,All timings,17.3 km - 18.2 km,260
+Single trip,All timings,18.3 km - 19.2 km,260
+Single trip,All timings,19.3 km - 20.2 km,270
+Single trip,All timings,20.3 km - 21.2 km,270
+Single trip,All timings,21.3 km - 22.2 km,270
+Single trip,All timings,22.3 km - 23.2 km,270
+Single trip,All timings,23.3 km - 24.2 km,280
+Single trip,All timings,24.3 km - 25.2 km,280
+Single trip,All timings,25.3 km - 26.2 km,280
+Single trip,All timings,26.3 km - 27.2 km,280
+Single trip,All timings,27.3 km - 28.2 km,280
+Single trip,All timings,28.3 km - 29.2 km,280
+Single trip,All timings,29.3 km - 30.2 km,280
+Single trip,All timings,30.3 km - 31.2 km,280
+Single trip,All timings,31.3 km - 32.2 km,280
+Single trip,All timings,32.3 km - 33.2 km,280
+Single trip,All timings,33.3 km - 34.2 km,280
+Single trip,All timings,34.3 km - 35.2 km,280
+Single trip,All timings,35.3 km - 36.2 km,280
+Single trip,All timings,36.3 km - 37.2 km,280
+Single trip,All timings,37.3 km - 38.2 km,280
+Single trip,All timings,38.3 km - 39.2 km,280
+Single trip,All timings,39.3 km - 40.2 km,280
+Single trip,All timings,Over 40.2 km,280

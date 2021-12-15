@@ -1,0 +1,3 @@
+"0",""
+"0","#Customer Satisfaction Score"
+"0","tm_shape(agg_app_overall_PA_mpsz3414) + tm_fill(""customer_satisfaction_score"", style = ""jenks"", n= 6, title = ""Average Customer Satisfaction Score (Taxi/Car Booking App) by Planning Area from 2016 - 2019"") + tm_text(""PLN_AREA_N"", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)"

@@ -1,0 +1,195 @@
+planning_area,,year,weight_of_market_share,customer_expectations_score,perceived_overall_quality_score,perceived_value_score,customer_satisfaction_score,customer_loyalty‎_user_trust_score,bus_agg_service_info,bus_agg_safety,bus_agg_comfort,bus_agg_convenience,bus_agg_customer_service
+ANG MO KIO,year,1.0,0.87,0.0,0.0,-0.5,0.0,0.0,0.0,0.0,0.0,-0.87,0.87
+ANG MO KIO,weight_of_market_share,0.87,1.0,0.5,0.5,0.0,0.5,0.5,0.5,0.5,0.5,-0.5,1.0
+ANG MO KIO,customer_expectations_score,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,perceived_overall_quality_score,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,perceived_value_score,-0.5,0.0,0.87,0.87,1.0,0.87,0.87,0.87,0.87,0.87,0.87,0.0
+ANG MO KIO,customer_satisfaction_score,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,customer_loyalty‎_user_trust_score,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,bus_agg_service_info,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,bus_agg_safety,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,bus_agg_comfort,0.0,0.5,1.0,1.0,0.87,1.0,1.0,1.0,1.0,1.0,0.5,0.5
+ANG MO KIO,bus_agg_convenience,-0.87,-0.5,0.5,0.5,0.87,0.5,0.5,0.5,0.5,0.5,1.0,-0.5
+ANG MO KIO,bus_agg_customer_service,0.87,1.0,0.5,0.5,0.0,0.5,0.5,0.5,0.5,0.5,-0.5,1.0
+BEDOK,year,1.0,-0.63,-0.33,0.03,0.21,0.08,0.03,0.31,0.13,0.2,0.08,-0.27
+BEDOK,weight_of_market_share,-0.63,1.0,0.27,0.31,-0.21,0.18,0.19,-0.02,0.0,-0.34,0.15,0.82
+BEDOK,customer_expectations_score,-0.33,0.27,1.0,0.59,0.76,0.71,-0.12,0.04,0.34,0.7,0.42,0.3
+BEDOK,perceived_overall_quality_score,0.03,0.31,0.59,1.0,0.58,0.8,0.53,0.46,0.49,0.25,0.48,0.63
+BEDOK,perceived_value_score,0.21,-0.21,0.76,0.58,1.0,0.69,-0.17,0.41,0.68,0.82,0.43,0.15
+BEDOK,customer_satisfaction_score,0.08,0.18,0.71,0.8,0.69,1.0,0.43,0.59,0.63,0.63,0.8,0.4
+BEDOK,customer_loyalty‎_user_trust_score,0.03,0.19,-0.12,0.53,-0.17,0.43,1.0,0.49,0.15,-0.18,0.53,0.35
+BEDOK,bus_agg_service_info,0.31,-0.02,0.04,0.46,0.41,0.59,0.49,1.0,0.88,0.23,0.66,0.38
+BEDOK,bus_agg_safety,0.13,0.0,0.34,0.49,0.68,0.63,0.15,0.88,1.0,0.4,0.52,0.36
+BEDOK,bus_agg_comfort,0.2,-0.34,0.7,0.25,0.82,0.63,-0.18,0.23,0.4,1.0,0.6,-0.15
+BEDOK,bus_agg_convenience,0.08,0.15,0.42,0.48,0.43,0.8,0.53,0.66,0.52,0.6,1.0,0.38
+BEDOK,bus_agg_customer_service,-0.27,0.82,0.3,0.63,0.15,0.4,0.35,0.38,0.36,-0.15,0.38,1.0
+BISHAN,weight_of_market_share,,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.5
+BISHAN,customer_expectations_score,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,perceived_overall_quality_score,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,perceived_value_score,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,customer_satisfaction_score,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,customer_loyalty‎_user_trust_score,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,bus_agg_service_info,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,bus_agg_safety,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,bus_agg_comfort,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,bus_agg_convenience,,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.87
+BISHAN,bus_agg_customer_service,,-0.5,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,1.0
+BUKIT BATOK,year,1.0,0.2,0.0,-0.36,-0.12,-0.46,-0.46,0.1,-0.48,-0.01,-0.54,0.51
+BUKIT BATOK,weight_of_market_share,0.2,1.0,-0.77,-0.45,-0.16,-0.58,-0.55,-0.59,-0.18,-0.33,-0.21,-0.4
+BUKIT BATOK,customer_expectations_score,0.0,-0.77,1.0,0.36,0.35,0.5,0.31,0.58,0.43,0.55,0.16,0.62
+BUKIT BATOK,perceived_overall_quality_score,-0.36,-0.45,0.36,1.0,0.65,0.82,0.95,0.45,0.77,0.29,0.77,0.36
+BUKIT BATOK,perceived_value_score,-0.12,-0.16,0.35,0.65,1.0,0.84,0.62,0.76,0.74,0.73,0.85,0.66
+BUKIT BATOK,customer_satisfaction_score,-0.46,-0.58,0.5,0.82,0.84,1.0,0.88,0.77,0.74,0.64,0.9,0.49
+BUKIT BATOK,customer_loyalty‎_user_trust_score,-0.46,-0.55,0.31,0.95,0.62,0.88,1.0,0.54,0.65,0.32,0.82,0.3
+BUKIT BATOK,bus_agg_service_info,0.1,-0.59,0.58,0.45,0.76,0.77,0.54,1.0,0.32,0.77,0.56,0.83
+BUKIT BATOK,bus_agg_safety,-0.48,-0.18,0.43,0.77,0.74,0.74,0.65,0.32,1.0,0.38,0.75,0.25
+BUKIT BATOK,bus_agg_comfort,-0.01,-0.33,0.55,0.29,0.73,0.64,0.32,0.77,0.38,1.0,0.6,0.74
+BUKIT BATOK,bus_agg_convenience,-0.54,-0.21,0.16,0.77,0.85,0.9,0.82,0.56,0.75,0.6,1.0,0.3
+BUKIT BATOK,bus_agg_customer_service,0.51,-0.4,0.62,0.36,0.66,0.49,0.3,0.83,0.25,0.74,0.3,1.0
+BUKIT PANJANG,customer_expectations_score,,,1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0,,-1.0,
+BUKIT PANJANG,perceived_overall_quality_score,,,-1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0,,1.0,
+BUKIT PANJANG,perceived_value_score,,,1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0,,-1.0,
+BUKIT PANJANG,customer_satisfaction_score,,,1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0,,-1.0,
+BUKIT PANJANG,customer_loyalty‎_user_trust_score,,,-1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0,,1.0,
+BUKIT PANJANG,bus_agg_service_info,,,1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0,,-1.0,
+BUKIT PANJANG,bus_agg_safety,,,-1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0,,1.0,
+BUKIT PANJANG,bus_agg_convenience,,,-1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0,,1.0,
+BUKIT TIMAH,customer_expectations_score,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,perceived_overall_quality_score,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,perceived_value_score,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,customer_satisfaction_score,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,customer_loyalty‎_user_trust_score,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,bus_agg_service_info,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,bus_agg_safety,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,bus_agg_comfort,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,bus_agg_convenience,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+BUKIT TIMAH,bus_agg_customer_service,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+CHOA CHU KANG,weight_of_market_share,,1.0,-0.87,-0.87,-0.87,-0.87,0.87,0.87,0.0,0.87,-0.5,1.0
+CHOA CHU KANG,customer_expectations_score,,-0.87,1.0,0.5,1.0,0.5,-0.5,-0.5,0.5,-0.5,0.0,-0.87
+CHOA CHU KANG,perceived_overall_quality_score,,-0.87,0.5,1.0,0.5,1.0,-1.0,-1.0,-0.5,-1.0,0.87,-0.87
+CHOA CHU KANG,perceived_value_score,,-0.87,1.0,0.5,1.0,0.5,-0.5,-0.5,0.5,-0.5,0.0,-0.87
+CHOA CHU KANG,customer_satisfaction_score,,-0.87,0.5,1.0,0.5,1.0,-1.0,-1.0,-0.5,-1.0,0.87,-0.87
+CHOA CHU KANG,customer_loyalty‎_user_trust_score,,0.87,-0.5,-1.0,-0.5,-1.0,1.0,1.0,0.5,1.0,-0.87,0.87
+CHOA CHU KANG,bus_agg_service_info,,0.87,-0.5,-1.0,-0.5,-1.0,1.0,1.0,0.5,1.0,-0.87,0.87
+CHOA CHU KANG,bus_agg_safety,,0.0,0.5,-0.5,0.5,-0.5,0.5,0.5,1.0,0.5,-0.87,0.0
+CHOA CHU KANG,bus_agg_comfort,,0.87,-0.5,-1.0,-0.5,-1.0,1.0,1.0,0.5,1.0,-0.87,0.87
+CHOA CHU KANG,bus_agg_convenience,,-0.5,0.0,0.87,0.0,0.87,-0.87,-0.87,-0.87,-0.87,1.0,-0.5
+CHOA CHU KANG,bus_agg_customer_service,,1.0,-0.87,-0.87,-0.87,-0.87,0.87,0.87,0.0,0.87,-0.5,1.0
+CLEMENTI,year,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+CLEMENTI,weight_of_market_share,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+CLEMENTI,customer_expectations_score,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+CLEMENTI,perceived_overall_quality_score,-1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0
+CLEMENTI,perceived_value_score,-1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0
+CLEMENTI,customer_satisfaction_score,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+CLEMENTI,customer_loyalty‎_user_trust_score,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+CLEMENTI,bus_agg_service_info,-1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0
+CLEMENTI,bus_agg_safety,-1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0
+CLEMENTI,bus_agg_comfort,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+CLEMENTI,bus_agg_convenience,-1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,1.0,-1.0
+CLEMENTI,bus_agg_customer_service,1.0,1.0,1.0,-1.0,-1.0,1.0,1.0,-1.0,-1.0,1.0,-1.0,1.0
+HOUGANG,year,1.0,-0.4,0.77,0.08,0.23,0.24,0.38,-0.19,0.03,0.16,0.03,0.04
+HOUGANG,weight_of_market_share,-0.4,1.0,-0.18,0.12,-0.24,-0.34,-0.01,-0.13,0.1,0.14,0.0,-0.02
+HOUGANG,customer_expectations_score,0.77,-0.18,1.0,0.48,0.65,0.51,0.54,0.14,0.38,0.37,0.35,0.38
+HOUGANG,perceived_overall_quality_score,0.08,0.12,0.48,1.0,0.73,0.73,0.74,0.54,0.73,0.59,0.84,0.81
+HOUGANG,perceived_value_score,0.23,-0.24,0.65,0.73,1.0,0.85,0.54,0.49,0.56,0.35,0.69,0.74
+HOUGANG,customer_satisfaction_score,0.24,-0.34,0.51,0.73,0.85,1.0,0.7,0.47,0.7,0.41,0.77,0.91
+HOUGANG,customer_loyalty‎_user_trust_score,0.38,-0.01,0.54,0.74,0.54,0.7,1.0,0.37,0.65,0.6,0.87,0.73
+HOUGANG,bus_agg_service_info,-0.19,-0.13,0.14,0.54,0.49,0.47,0.37,1.0,0.73,0.78,0.69,0.5
+HOUGANG,bus_agg_safety,0.03,0.1,0.38,0.73,0.56,0.7,0.65,0.73,1.0,0.75,0.83,0.73
+HOUGANG,bus_agg_comfort,0.16,0.14,0.37,0.59,0.35,0.41,0.6,0.78,0.75,1.0,0.66,0.55
+HOUGANG,bus_agg_convenience,0.03,0.0,0.35,0.84,0.69,0.77,0.87,0.69,0.83,0.66,1.0,0.79
+HOUGANG,bus_agg_customer_service,0.04,-0.02,0.38,0.81,0.74,0.91,0.73,0.5,0.73,0.55,0.79,1.0
+JURONG EAST,year,1.0,-1.0,-0.87,0.87,0.87,0.87,0.0,-1.0,-0.87,0.87,-0.87,-0.87
+JURONG EAST,weight_of_market_share,-1.0,1.0,0.87,-0.87,-0.87,-0.87,0.0,1.0,0.87,-0.87,0.87,0.87
+JURONG EAST,customer_expectations_score,-0.87,0.87,1.0,-0.5,-0.5,-1.0,0.5,0.87,1.0,-1.0,0.5,0.5
+JURONG EAST,perceived_overall_quality_score,0.87,-0.87,-0.5,1.0,1.0,0.5,0.5,-0.87,-0.5,0.5,-1.0,-1.0
+JURONG EAST,perceived_value_score,0.87,-0.87,-0.5,1.0,1.0,0.5,0.5,-0.87,-0.5,0.5,-1.0,-1.0
+JURONG EAST,customer_satisfaction_score,0.87,-0.87,-1.0,0.5,0.5,1.0,-0.5,-0.87,-1.0,1.0,-0.5,-0.5
+JURONG EAST,customer_loyalty‎_user_trust_score,0.0,0.0,0.5,0.5,0.5,-0.5,1.0,0.0,0.5,-0.5,-0.5,-0.5
+JURONG EAST,bus_agg_service_info,-1.0,1.0,0.87,-0.87,-0.87,-0.87,0.0,1.0,0.87,-0.87,0.87,0.87
+JURONG EAST,bus_agg_safety,-0.87,0.87,1.0,-0.5,-0.5,-1.0,0.5,0.87,1.0,-1.0,0.5,0.5
+JURONG EAST,bus_agg_comfort,0.87,-0.87,-1.0,0.5,0.5,1.0,-0.5,-0.87,-1.0,1.0,-0.5,-0.5
+JURONG EAST,bus_agg_convenience,-0.87,0.87,0.5,-1.0,-1.0,-0.5,-0.5,0.87,0.5,-0.5,1.0,1.0
+JURONG EAST,bus_agg_customer_service,-0.87,0.87,0.5,-1.0,-1.0,-0.5,-0.5,0.87,0.5,-0.5,1.0,1.0
+JURONG WEST,year,1.0,0.5,0.5,0.5,0.5,0.5,1.0,0.5,0.5,1.0,0.5,-0.5
+JURONG WEST,weight_of_market_share,0.5,1.0,-0.5,-0.5,-0.5,-0.5,0.5,-0.5,-0.5,0.5,-0.5,-1.0
+JURONG WEST,customer_expectations_score,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,perceived_overall_quality_score,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,perceived_value_score,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,customer_satisfaction_score,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,customer_loyalty‎_user_trust_score,1.0,0.5,0.5,0.5,0.5,0.5,1.0,0.5,0.5,1.0,0.5,-0.5
+JURONG WEST,bus_agg_service_info,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,bus_agg_safety,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,bus_agg_comfort,1.0,0.5,0.5,0.5,0.5,0.5,1.0,0.5,0.5,1.0,0.5,-0.5
+JURONG WEST,bus_agg_convenience,0.5,-0.5,1.0,1.0,1.0,1.0,0.5,1.0,1.0,0.5,1.0,0.5
+JURONG WEST,bus_agg_customer_service,-0.5,-1.0,0.5,0.5,0.5,0.5,-0.5,0.5,0.5,-0.5,0.5,1.0
+PUNGGOL,year,1.0,-1.0,0.63,0.63,0.5,0.63,-0.32,0.5,0.32,0.63,0.63,0.95
+PUNGGOL,weight_of_market_share,-1.0,1.0,-0.63,-0.63,-0.5,-0.63,0.32,-0.5,-0.32,-0.63,-0.63,-0.95
+PUNGGOL,customer_expectations_score,0.63,-0.63,1.0,1.0,0.95,1.0,0.4,0.95,0.8,1.0,1.0,0.8
+PUNGGOL,perceived_overall_quality_score,0.63,-0.63,1.0,1.0,0.95,1.0,0.4,0.95,0.8,1.0,1.0,0.8
+PUNGGOL,perceived_value_score,0.5,-0.5,0.95,0.95,1.0,0.95,0.63,1.0,0.63,0.95,0.95,0.74
+PUNGGOL,customer_satisfaction_score,0.63,-0.63,1.0,1.0,0.95,1.0,0.4,0.95,0.8,1.0,1.0,0.8
+PUNGGOL,customer_loyalty‎_user_trust_score,-0.32,0.32,0.4,0.4,0.63,0.4,1.0,0.63,0.2,0.4,0.4,0.0
+PUNGGOL,bus_agg_service_info,0.5,-0.5,0.95,0.95,1.0,0.95,0.63,1.0,0.63,0.95,0.95,0.74
+PUNGGOL,bus_agg_safety,0.32,-0.32,0.8,0.8,0.63,0.8,0.2,0.63,1.0,0.8,0.8,0.4
+PUNGGOL,bus_agg_comfort,0.63,-0.63,1.0,1.0,0.95,1.0,0.4,0.95,0.8,1.0,1.0,0.8
+PUNGGOL,bus_agg_convenience,0.63,-0.63,1.0,1.0,0.95,1.0,0.4,0.95,0.8,1.0,1.0,0.8
+PUNGGOL,bus_agg_customer_service,0.95,-0.95,0.8,0.8,0.74,0.8,0.0,0.74,0.4,0.8,0.8,1.0
+SENGKANG,year,1.0,0.87,-0.87,0.0,0.87,0.0,0.87,0.87,0.87,-1.0,-0.5,0.87
+SENGKANG,weight_of_market_share,0.87,1.0,-1.0,0.5,1.0,0.5,0.5,1.0,1.0,-0.87,-0.87,0.5
+SENGKANG,customer_expectations_score,-0.87,-1.0,1.0,-0.5,-1.0,-0.5,-0.5,-1.0,-1.0,0.87,0.87,-0.5
+SENGKANG,perceived_overall_quality_score,0.0,0.5,-0.5,1.0,0.5,1.0,-0.5,0.5,0.5,0.0,-0.87,-0.5
+SENGKANG,perceived_value_score,0.87,1.0,-1.0,0.5,1.0,0.5,0.5,1.0,1.0,-0.87,-0.87,0.5
+SENGKANG,customer_satisfaction_score,0.0,0.5,-0.5,1.0,0.5,1.0,-0.5,0.5,0.5,0.0,-0.87,-0.5
+SENGKANG,customer_loyalty‎_user_trust_score,0.87,0.5,-0.5,-0.5,0.5,-0.5,1.0,0.5,0.5,-0.87,0.0,1.0
+SENGKANG,bus_agg_service_info,0.87,1.0,-1.0,0.5,1.0,0.5,0.5,1.0,1.0,-0.87,-0.87,0.5
+SENGKANG,bus_agg_safety,0.87,1.0,-1.0,0.5,1.0,0.5,0.5,1.0,1.0,-0.87,-0.87,0.5
+SENGKANG,bus_agg_comfort,-1.0,-0.87,0.87,0.0,-0.87,0.0,-0.87,-0.87,-0.87,1.0,0.5,-0.87
+SENGKANG,bus_agg_convenience,-0.5,-0.87,0.87,-0.87,-0.87,-0.87,0.0,-0.87,-0.87,0.5,1.0,0.0
+SENGKANG,bus_agg_customer_service,0.87,0.5,-0.5,-0.5,0.5,-0.5,1.0,0.5,0.5,-0.87,0.0,1.0
+SERANGOON,year,1.0,0.27,-0.26,-0.26,0.77,0.26,-0.26,-0.26,-0.26,-0.26,0.26,-0.26
+SERANGOON,weight_of_market_share,0.27,1.0,0.11,0.11,0.21,-0.11,0.63,0.11,0.11,0.11,-0.11,0.11
+SERANGOON,customer_expectations_score,-0.26,0.11,1.0,1.0,0.4,0.8,0.8,1.0,1.0,1.0,0.8,1.0
+SERANGOON,perceived_overall_quality_score,-0.26,0.11,1.0,1.0,0.4,0.8,0.8,1.0,1.0,1.0,0.8,1.0
+SERANGOON,perceived_value_score,0.77,0.21,0.4,0.4,1.0,0.8,0.2,0.4,0.4,0.4,0.8,0.4
+SERANGOON,customer_satisfaction_score,0.26,-0.11,0.8,0.8,0.8,1.0,0.4,0.8,0.8,0.8,1.0,0.8
+SERANGOON,customer_loyalty‎_user_trust_score,-0.26,0.63,0.8,0.8,0.2,0.4,1.0,0.8,0.8,0.8,0.4,0.8
+SERANGOON,bus_agg_service_info,-0.26,0.11,1.0,1.0,0.4,0.8,0.8,1.0,1.0,1.0,0.8,1.0
+SERANGOON,bus_agg_safety,-0.26,0.11,1.0,1.0,0.4,0.8,0.8,1.0,1.0,1.0,0.8,1.0
+SERANGOON,bus_agg_comfort,-0.26,0.11,1.0,1.0,0.4,0.8,0.8,1.0,1.0,1.0,0.8,1.0
+SERANGOON,bus_agg_convenience,0.26,-0.11,0.8,0.8,0.8,1.0,0.4,0.8,0.8,0.8,1.0,0.8
+SERANGOON,bus_agg_customer_service,-0.26,0.11,1.0,1.0,0.4,0.8,0.8,1.0,1.0,1.0,0.8,1.0
+TAMPINES,year,1.0,1.0,1.0,1.0,-1.0,-1.0,-1.0,,-1.0,-1.0,1.0,1.0
+TAMPINES,weight_of_market_share,1.0,1.0,1.0,1.0,-1.0,-1.0,-1.0,,-1.0,-1.0,1.0,1.0
+TAMPINES,customer_expectations_score,1.0,1.0,1.0,1.0,-1.0,-1.0,-1.0,,-1.0,-1.0,1.0,1.0
+TAMPINES,perceived_overall_quality_score,1.0,1.0,1.0,1.0,-1.0,-1.0,-1.0,,-1.0,-1.0,1.0,1.0
+TAMPINES,perceived_value_score,-1.0,-1.0,-1.0,-1.0,1.0,1.0,1.0,,1.0,1.0,-1.0,-1.0
+TAMPINES,customer_satisfaction_score,-1.0,-1.0,-1.0,-1.0,1.0,1.0,1.0,,1.0,1.0,-1.0,-1.0
+TAMPINES,customer_loyalty‎_user_trust_score,-1.0,-1.0,-1.0,-1.0,1.0,1.0,1.0,,1.0,1.0,-1.0,-1.0
+TAMPINES,bus_agg_safety,-1.0,-1.0,-1.0,-1.0,1.0,1.0,1.0,,1.0,1.0,-1.0,-1.0
+TAMPINES,bus_agg_comfort,-1.0,-1.0,-1.0,-1.0,1.0,1.0,1.0,,1.0,1.0,-1.0,-1.0
+TAMPINES,bus_agg_convenience,1.0,1.0,1.0,1.0,-1.0,-1.0,-1.0,,-1.0,-1.0,1.0,1.0
+TAMPINES,bus_agg_customer_service,1.0,1.0,1.0,1.0,-1.0,-1.0,-1.0,,-1.0,-1.0,1.0,1.0
+WOODLANDS,year,1.0,0.49,0.13,0.17,-0.01,-0.33,-0.13,-0.43,-0.01,-0.07,-0.58,-0.28
+WOODLANDS,weight_of_market_share,0.49,1.0,-0.29,-0.03,-0.54,-0.35,-0.09,-0.29,-0.5,-0.03,-0.55,-0.16
+WOODLANDS,customer_expectations_score,0.13,-0.29,1.0,-0.02,0.08,-0.25,-0.27,0.27,-0.06,-0.37,0.02,0.27
+WOODLANDS,perceived_overall_quality_score,0.17,-0.03,-0.02,1.0,0.67,0.45,0.59,0.09,-0.24,-0.02,0.0,0.5
+WOODLANDS,perceived_value_score,-0.01,-0.54,0.08,0.67,1.0,0.23,0.61,0.33,0.25,0.16,0.25,0.43
+WOODLANDS,customer_satisfaction_score,-0.33,-0.35,-0.25,0.45,0.23,1.0,0.52,0.31,0.37,0.45,0.69,0.43
+WOODLANDS,customer_loyalty‎_user_trust_score,-0.13,-0.09,-0.27,0.59,0.61,0.52,1.0,0.59,0.25,0.51,0.47,0.79
+WOODLANDS,bus_agg_service_info,-0.43,-0.29,0.27,0.09,0.33,0.31,0.59,1.0,0.39,0.58,0.8,0.79
+WOODLANDS,bus_agg_safety,-0.01,-0.5,-0.06,-0.24,0.25,0.37,0.25,0.39,1.0,0.74,0.67,0.03
+WOODLANDS,bus_agg_comfort,-0.07,-0.03,-0.37,-0.02,0.16,0.45,0.51,0.58,0.74,1.0,0.7,0.24
+WOODLANDS,bus_agg_convenience,-0.58,-0.55,0.02,0.0,0.25,0.69,0.47,0.8,0.67,0.7,1.0,0.53
+WOODLANDS,bus_agg_customer_service,-0.28,-0.16,0.27,0.5,0.43,0.43,0.79,0.79,0.03,0.24,0.53,1.0
+YISHUN,year,1.0,0.0,0.0,0.87,,0.0,-0.87,0.0,0.5,0.0,0.0,0.0
+YISHUN,weight_of_market_share,0.0,1.0,-1.0,-0.5,,-1.0,-0.5,-1.0,-0.87,-1.0,-1.0,-1.0
+YISHUN,customer_expectations_score,0.0,-1.0,1.0,0.5,,1.0,0.5,1.0,0.87,1.0,1.0,1.0
+YISHUN,perceived_overall_quality_score,0.87,-0.5,0.5,1.0,,0.5,-0.5,0.5,0.87,0.5,0.5,0.5
+YISHUN,customer_satisfaction_score,0.0,-1.0,1.0,0.5,,1.0,0.5,1.0,0.87,1.0,1.0,1.0
+YISHUN,customer_loyalty‎_user_trust_score,-0.87,-0.5,0.5,-0.5,,0.5,1.0,0.5,0.0,0.5,0.5,0.5
+YISHUN,bus_agg_service_info,0.0,-1.0,1.0,0.5,,1.0,0.5,1.0,0.87,1.0,1.0,1.0
+YISHUN,bus_agg_safety,0.5,-0.87,0.87,0.87,,0.87,0.0,0.87,1.0,0.87,0.87,0.87
+YISHUN,bus_agg_comfort,0.0,-1.0,1.0,0.5,,1.0,0.5,1.0,0.87,1.0,1.0,1.0
+YISHUN,bus_agg_convenience,0.0,-1.0,1.0,0.5,,1.0,0.5,1.0,0.87,1.0,1.0,1.0
+YISHUN,bus_agg_customer_service,0.0,-1.0,1.0,0.5,,1.0,0.5,1.0,0.87,1.0,1.0,1.0

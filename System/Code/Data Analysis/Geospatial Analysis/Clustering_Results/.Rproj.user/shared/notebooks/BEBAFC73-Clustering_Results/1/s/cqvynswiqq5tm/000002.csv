@@ -1,0 +1,6 @@
+"0","#Check the total number of population of tertiary students"
+"0","sum(tertiary_students$Total)"
+"1","[1]"
+"1"," 186884"
+"1","
+"

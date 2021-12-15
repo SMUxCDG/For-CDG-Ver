@@ -1,0 +1,3 @@
+"0",""
+"0","#Perceived Overall Quality Score"
+"0","tm_shape(agg_bus_overall_PA_mpsz3414) + tm_fill(""perceived_overall_quality_score"", style = ""jenks"", n= 6, title = ""Average Perceived Overall Quality Score by (Bus) Planning Area from 2016 - 2019"") + tm_text(""PLN_AREA_N"", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)"

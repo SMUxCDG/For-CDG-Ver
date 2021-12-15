@@ -1,0 +1,2 @@
+"0","#Customer Expectations Score"
+"0","tm_shape(agg_bus_2016_PA_mpsz3414) + tm_fill(""customer_expectations_score"", style = ""jenks"", n= 6, title = ""Average Customer Expectations Score (Bus) by Planning Area in 2016"") + tm_text(""PLN_AREA_N"", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)"

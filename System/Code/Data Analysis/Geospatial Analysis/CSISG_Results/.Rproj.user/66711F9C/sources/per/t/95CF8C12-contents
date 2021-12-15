@@ -1,0 +1,285 @@
+---
+title: "Aggregated Taxi Dataset Under CSISG"
+author: "Shermin Tan"
+date: "11/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Getting Started
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+packages = c('sp', 'rgdal', 'sf', 'tidyverse', 'tmap', 'ggplot2','stringr', 'maptools', 'raster', 'spatstat', 'sfheaders', 'dplyr')
+for(p in packages){
+  if(!require(p, character.only = T)){
+    install.packages(p)
+  }
+  library(p, character.only = T)
+}
+```
+
+
+#Import Data
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+mpsz = st_read(dsn = "data/geospatial", layer = "MP14_SUBZONE_WEB_PL")
+agg_taxi <- read_csv("data/aspatial/agg_taxi.csv")
+```
+
+#Data Cleaning and Segmentation
+
+##Singapore Planning Area w/ Geometry Points
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#transform CRS = 3414
+mpsz_3414 <- st_set_crs(mpsz, 3414)
+
+mpsz_3414_plnarea <- mpsz_3414 %>%
+  group_by(PLN_AREA_N) %>%
+  summarise()
+```
+
+###Visualize Maps Function
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Visualization
+tmap_mode("view")
+```
+
+##agg_taxi
+
+###agg_taxi overall for Year 2016 - 2019
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+agg_taxi_overall <- agg_taxi %>%
+  dplyr::select(3,5:9)
+
+agg_taxi_overall_PA <- aggregate(agg_taxi_overall, by = list(agg_taxi_overall$planning_area), FUN=mean)
+names(agg_taxi_overall_PA)[1] <- 'planning_area'
+agg_taxi_overall_PA <- agg_taxi_overall_PA %>%
+  dplyr::select(1, 3:7)
+
+agg_taxi_overall_PA_mpsz3414 <- left_join(mpsz_3414_plnarea, agg_taxi_overall_PA, by = c("PLN_AREA_N" = "planning_area"))
+agg_taxi_overall_PA_mpsz3414 <- agg_taxi_overall_PA_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  filter(! is.na(customer_expectations_score))
+```
+
+####Export to csv for PowerBI
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#agg_taxi_overall_PA_mpsz3414_csv <- agg_taxi_overall_PA_mpsz3414 %>%
+#  dplyr::select(1,3:7) %>%
+#  st_set_geometry(NULL)
+#
+#agg_taxi_overall_PA_mpsz3414_csv$PLN_AREA_N <- sub("^", "Singapore, ", #agg_taxi_overall_PA_mpsz3414_csv$PLN_AREA_N)
+#
+#write.csv(agg_taxi_overall_PA_mpsz3414_csv, #"data/aspatial/agg_taxi_overall_PowerBI.csv", row.names = FALSE)
+```
+
+####Visualization for agg_taxi overall
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Customer Expectations Score
+tm_shape(agg_taxi_overall_PA_mpsz3414) + tm_fill("customer_expectations_score", style = "jenks", n= 6, title = "Average Customer Expectations Score (Taxi) by Planning Area from 2016 - 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Satisfaction Score
+tm_shape(agg_taxi_overall_PA_mpsz3414) + tm_fill("customer_satisfaction_score", style = "jenks", n= 6, title = "Average Customer Satisfaction Score (Taxi) by Planning Area from 2016 - 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Loyalty Trust Score
+tm_shape(agg_taxi_overall_PA_mpsz3414) + tm_fill("customer_loyalty‎_user_trust_score", style = "jenks", n= 6, title = "Average Customer Loyalty User Trust Score (Taxi) by Planning Area from 2016 - 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Overall Quality Score
+tm_shape(agg_taxi_overall_PA_mpsz3414) + tm_fill("perceived_overall_quality_score", style = "jenks", n= 6, title = "Average Perceived Overall Quality Score by (Taxi) Planning Area from 2016 - 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Value Score
+tm_shape(agg_taxi_overall_PA_mpsz3414) + tm_fill("perceived_value_score", style = "jenks", n= 6, title = "Average Perceived Value Score (Taxi) by Planning Area from 2016 - 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```
+
+####Expectations vs Satisfaction
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+agg_taxi_overall_ExpectvsSatisf <- agg_taxi_overall_PA_mpsz3414 %>%
+  dplyr::select(1,2,3,6)
+
+agg_taxi_overall_ExpectvsSatisf_comparison <- agg_taxi_overall_ExpectvsSatisf %>%
+  mutate(PositiveOrNegative = case_when(customer_expectations_score > customer_satisfaction_score ~ "Yes", 
+                                        customer_expectations_score < customer_satisfaction_score ~ "No",
+                                        TRUE ~ "NA"))
+
+agg_taxi_overall_ExpectvsSatisf_positive <- agg_taxi_overall_ExpectvsSatisf_comparison %>%
+  filter(PositiveOrNegative == "Yes") %>%
+  mutate(difference = customer_expectations_score - customer_satisfaction_score)
+
+agg_taxi_overall_ExpectvsSatisf_positive %>% arrange(desc(difference))
+
+#Visualize difference
+tm_shape(agg_taxi_overall_ExpectvsSatisf_positive) + tm_fill("difference", style = "jenks", n= 6, title = "Taxi:(AVG) Expectations vs Satisfaction Scores Difference (2016 - 2019)") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```
+
+###Individually by year
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#2019
+agg_taxi_2019 <- agg_taxi %>%
+  filter(year == 2019) %>%
+  dplyr::select(1,3,5:9)
+
+agg_taxi_2019_PA <- aggregate(agg_taxi_2019, by = list(agg_taxi_2019$planning_area), FUN=mean)
+names(agg_taxi_2019_PA)[1] <- 'planning_area'
+agg_taxi_2019_PA <- agg_taxi_2019_PA %>%
+  dplyr::select(1:2,4:8)
+
+agg_taxi_2019_PA_mpsz3414 <- left_join(mpsz_3414_plnarea, agg_taxi_2019_PA, by = c("PLN_AREA_N" = "planning_area"))
+agg_taxi_2019_PA_mpsz3414 <- agg_taxi_2019_PA_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  filter(year == 2019)
+  #drop_na()
+
+#2018
+agg_taxi_2018 <- agg_taxi %>%
+  filter(year == 2018) %>%
+  dplyr::select(1,3,5:9)
+
+agg_taxi_2018_PA <- aggregate(agg_taxi_2018, by = list(agg_taxi_2018$planning_area), FUN=mean)
+names(agg_taxi_2018_PA)[1] <- 'planning_area'
+agg_taxi_2018_PA <- agg_taxi_2018_PA %>%
+  dplyr::select(1:2,4:8)
+
+agg_taxi_2018_PA_mpsz3414 <- left_join(mpsz_3414_plnarea, agg_taxi_2018_PA, by = c("PLN_AREA_N" = "planning_area"))
+agg_taxi_2018_PA_mpsz3414 <- agg_taxi_2018_PA_mpsz3414 %>%
+  group_by(PLN_AREA_N) %>%
+  filter(year == 2018)
+  #drop_na()
+
+#2017
+agg_taxi_2017 <- agg_taxi %>%
+  filter(year == 2017) %>%
+  dplyr::select(1,3,5:9)
+
+agg_taxi_2017_PA <- aggregate(agg_taxi_2017, by = list(agg_taxi_2017$planning_area), FUN=mean)
+names(agg_taxi_2017_PA)[1] <- 'planning_area'
+agg_taxi_2017_PA <- agg_taxi_2017_PA %>%
+  dplyr::select(1:2,4:8)
+
+agg_taxi_2017_PA_mpsz3414 <- left_join(mpsz_3414_plnarea, agg_taxi_2017_PA, by = c("PLN_AREA_N" = "planning_area"))
+agg_taxi_2017_PA_mpsz3414 <- agg_taxi_2017_PA_mpsz3414 %>%
+  group_by(PLN_AREA_N)  %>%
+  filter(year == 2017)
+  #drop_na()
+
+#2016
+agg_taxi_2016 <- agg_taxi %>%
+  filter(year == 2016) %>%
+  dplyr::select(1,3,5:9)
+
+agg_taxi_2016_PA <- aggregate(agg_taxi_2016, by = list(agg_taxi_2016$planning_area), FUN=mean)
+names(agg_taxi_2016_PA)[1] <- 'planning_area'
+agg_taxi_2016_PA <- agg_taxi_2016_PA %>%
+  dplyr::select(1:2,4:8)
+
+agg_taxi_2016_PA_mpsz3414 <- left_join(mpsz_3414_plnarea, agg_taxi_2016_PA, by = c("PLN_AREA_N" = "planning_area"))
+agg_taxi_2016_PA_mpsz3414 <- agg_taxi_2016_PA_mpsz3414 %>%
+  group_by(PLN_AREA_N)  %>%
+  filter(year == 2016)
+  #drop_na()
+```
+
+####Comparison of respective scores over the years
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+agg_taxi_2016_2019_comparison <- agg_taxi %>%
+  dplyr::select(1,3,5:9)
+
+agg_taxi_2016_2019_comparison_PA <- aggregate(agg_taxi_2016_2019_comparison, by = list(agg_taxi_2016_2019_comparison$planning_area, agg_taxi_2016_2019_comparison$year), FUN=mean)
+names(agg_taxi_2016_2019_comparison_PA)[1] <- 'planning_area'
+names(agg_taxi_2016_2019_comparison_PA)[2] <- 'year'
+agg_taxi_2016_2019_comparison_PA <- agg_taxi_2016_2019_comparison_PA %>%
+  dplyr::select(1:2,5:9)
+
+agg_taxi_2016_2019_comparison_PA <- agg_taxi_2016_2019_comparison_PA %>%
+  mutate_at("year", as.character)
+
+#Customer Expectations Score
+ggplot(agg_taxi_2016_2019_comparison_PA, aes(planning_area, customer_expectations_score,  fill=year), xlab="Age Group") + geom_bar(stat="identity", position="dodge", width=.6) + scale_x_discrete(labels=abbreviate) + geom_text(aes(label=round(customer_expectations_score, 1)), vjust=0, size=3) + labs(title="Comparison of Customer Expectation Scores (Taxi) from 2016 to 2019")
+
+#Customer Satisfaction Score
+ggplot(agg_taxi_2016_2019_comparison_PA, aes(planning_area, customer_satisfaction_score,  fill=year), xlab="Age Group") + geom_bar(stat="identity", position="dodge", width=.6) + scale_x_discrete(labels=abbreviate) + geom_text(aes(label=round(customer_satisfaction_score, 1)), vjust=0, size=3) + labs(title="Comparison of Customer Satisfaction Scores (Taxi) from 2016 to 2019")
+
+#Customer Loyalty User Trust Score
+ggplot(agg_taxi_2016_2019_comparison_PA, aes(planning_area, agg_taxi_2016_2019_comparison_PA$`customer_loyalty‎_user_trust_score`,  fill=year), xlab="Age Group") + geom_bar(stat="identity", position="dodge", width=.6) + scale_x_discrete(labels=abbreviate) + geom_text(aes(label=round(agg_taxi_2016_2019_comparison_PA$`customer_loyalty‎_user_trust_score`, 1)), vjust=0, size=3) + labs(title="Comparison of Customer Loyalty User Trust Scores (Taxi) from 2016 to 2019")
+
+#Perceived Overall Quality Score
+ggplot(agg_taxi_2016_2019_comparison_PA, aes(planning_area, perceived_overall_quality_score,  fill=year), xlab="Age Group") + geom_bar(stat="identity", position="dodge", width=.6) + scale_x_discrete(labels=abbreviate) + geom_text(aes(label=round(perceived_overall_quality_score, 1)), vjust=0, size=3) + labs(title="Comparison of Perceived Overall Quality Scores (Taxi) from 2016 to 2019")
+
+#Perceived Value Score
+ggplot(agg_taxi_2016_2019_comparison_PA, aes(planning_area, perceived_value_score,  fill=year), xlab="Age Group") + geom_bar(stat="identity", position="dodge", width=.6) + scale_x_discrete(labels=abbreviate) + geom_text(aes(label=round(perceived_value_score, 1)), vjust=0, size=3) + labs(title="Comparison of Perceived Value Scores (Taxi) from 2016 to 2019")
+```
+
+####Visualization for 2019 agg_taxi
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Customer Expectations Score
+tm_shape(agg_taxi_2019_PA_mpsz3414) + tm_fill("customer_expectations_score", style = "jenks", n= 6, title = "Average Customer Expectations Score (Taxi) by Planning Area in 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Satisfaction Score
+tm_shape(agg_taxi_2019_PA_mpsz3414) + tm_fill("customer_satisfaction_score", style = "jenks", n= 6, title = "Average Customer Satisfaction Score (Taxi) by Planning Area in 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Loyalty Trust Score
+tm_shape(agg_taxi_2019_PA_mpsz3414) + tm_fill("customer_loyalty‎_user_trust_score", style = "jenks", n= 6, title = "Average Customer Loyalty User Trust Score (Taxi) by Planning Area in 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Overall Quality Score
+tm_shape(agg_taxi_2019_PA_mpsz3414) + tm_fill("perceived_overall_quality_score", style = "jenks", n= 6, title = "Average Perceived Overall Quality Score (Taxi) by Planning Area in 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Value Score
+tm_shape(agg_taxi_2019_PA_mpsz3414) + tm_fill("perceived_value_score", style = "jenks", n= 6, title = "Average Perceived Value Score (Taxi) by Planning Area in 2019") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```
+
+####Visualization for 2018 agg_taxi
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Customer Expectations Score
+tm_shape(agg_taxi_2018_PA_mpsz3414) + tm_fill("customer_expectations_score", style = "jenks", n= 6, title = "Average Customer Expectations Score (Taxi) by Planning Area in 2018") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Satisfaction Score
+tm_shape(agg_taxi_2018_PA_mpsz3414) + tm_fill("customer_satisfaction_score", style = "jenks", n= 6, title = "Average Customer Satisfaction Score (Taxi) by Planning Area in 2018") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Loyalty Trust Score
+tm_shape(agg_taxi_2018_PA_mpsz3414) + tm_fill("customer_loyalty‎_user_trust_score", style = "jenks", n= 6, title = "Average Customer Loyalty User Trust Score (Taxi) by Planning Area in 2018") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Overall Quality Score
+tm_shape(agg_taxi_2018_PA_mpsz3414) + tm_fill("perceived_overall_quality_score", style = "jenks", n= 6, title = "Average Perceived Overall Quality Score (Taxi) by Planning Area in 2018") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Value Score
+tm_shape(agg_taxi_2018_PA_mpsz3414) + tm_fill("perceived_value_score", style = "jenks", n= 6, title = "Average Perceived Value Score (Taxi) by Planning Area in 2018") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```
+
+####Visualization for 2017 agg_taxi
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Customer Expectations Score
+tm_shape(agg_taxi_2017_PA_mpsz3414) + tm_fill("customer_expectations_score", style = "jenks", n= 6, title = "Average Customer Expectations Score (Taxi) by Planning Area in 2017") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Satisfaction Score
+tm_shape(agg_taxi_2017_PA_mpsz3414) + tm_fill("customer_satisfaction_score", style = "jenks", n= 6, title = "Average Customer Satisfaction Score (Taxi) by Planning Area in 2017") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Loyalty Trust Score
+tm_shape(agg_taxi_2017_PA_mpsz3414) + tm_fill("customer_loyalty‎_user_trust_score", style = "jenks", n= 6, title = "Average Customer Loyalty User Trust Score (Taxi) by Planning Area in 2017") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Overall Quality Score
+tm_shape(agg_taxi_2017_PA_mpsz3414) + tm_fill("perceived_overall_quality_score", style = "jenks", n= 6, title = "Average Perceived Overall Quality Score (Taxi) by Planning Area in 2017") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Value Score
+tm_shape(agg_taxi_2017_PA_mpsz3414) + tm_fill("perceived_value_score", style = "jenks", n= 6, title = "Average Perceived Value Score (Taxi) by Planning Area in 2017") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```
+
+####Visualization for 2016 agg_taxi
+```{r echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+#Customer Expectations Score
+tm_shape(agg_taxi_2016_PA_mpsz3414) + tm_fill("customer_expectations_score", style = "jenks", n= 6, title = "Average Customer Expectations Score (Taxi) by Planning Area in 2016") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Satisfaction Score
+tm_shape(agg_taxi_2016_PA_mpsz3414) + tm_fill("customer_satisfaction_score", style = "jenks", n= 6, title = "Average Customer Satisfaction Score (Taxi) by Planning Area in 2016") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Customer Loyalty Trust Score
+tm_shape(agg_taxi_2016_PA_mpsz3414) + tm_fill("customer_loyalty‎_user_trust_score", style = "jenks", n= 6, title = "Average Customer Loyalty User Trust Score (Taxi) by Planning Area in 2016") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Overall Quality Score
+tm_shape(agg_taxi_2016_PA_mpsz3414) + tm_fill("perceived_overall_quality_score", style = "jenks", n= 6, title = "Average Perceived Overall Quality Score (Taxi) by Planning Area in 2016") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+
+#Perceived Value Score
+tm_shape(agg_taxi_2016_PA_mpsz3414) + tm_fill("perceived_value_score", style = "jenks", n= 6, title = "Average Perceived Value Score (Taxi) by Planning Area in 2016") + tm_text("PLN_AREA_N", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text("PLN_AREA_N", size = 0.2)
+```

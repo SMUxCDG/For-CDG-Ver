@@ -1,0 +1,9 @@
+"0","#Map Visual
+tmap_mode(""view"")
+
+#Cluster 0
+tm_shape(cluster0_mpsz3414_PAfreq_Wpop) + tm_fill(""predicted_numbers"", style = ""jenks"", n= 6, title = ""Cluster 0: Predicted Numbers of Tertiary Students"") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)
+"
+"0",""
+"0","#Cluster 1"
+"0","tm_shape(cluster1_mpsz3414_PAfreq_Wpop) + tm_fill(""predicted_numbers"", style = ""jenks"", n= 6, title = ""Cluster 1: Predicted Numbers of Tertiary Students"") + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)"

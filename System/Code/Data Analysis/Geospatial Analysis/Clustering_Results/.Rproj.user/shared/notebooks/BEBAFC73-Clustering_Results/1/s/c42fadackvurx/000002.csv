@@ -1,0 +1,7 @@
+"0","#cluster1_mpsz3414_PAfreq_csv <- cluster1_mpsz3414_PAfreq %>%"
+"0","#  dplyr::select(1,3) %>%"
+"0","#  st_set_geometry(NULL)"
+"0","#"
+"0","#cluster1_mpsz3414_PAfreq_csv$PLN_AREA_N <- sub(""^"", ""Singapore, "", #cluster1_mpsz3414_PAfreq_csv$PLN_AREA_N)"
+"0","#"
+"0","#write.csv(cluster1_mpsz3414_PAfreq_csv, ""data/aspatial/Cluster1_PowerBI.csv"", #row.names = FALSE)"

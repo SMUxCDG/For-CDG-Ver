@@ -1,0 +1,6 @@
+"0","#transform CRS = 3414"
+"0","mpsz_3414 <- st_set_crs(mpsz, 3414)"
+"0",""
+"0","mpsz_3414_plnarea <- mpsz_3414 %>%"
+"0","  group_by(PLN_AREA_N) %>%"
+"0","  summarise()"

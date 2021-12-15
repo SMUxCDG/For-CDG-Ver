@@ -1,0 +1,3 @@
+"0",""
+"0","#Perceived Value Score"
+"0","tm_shape(agg_mrt_2017_PA_mpsz3414) + tm_fill(""perceived_value_score"", style = ""jenks"", n= 6, title = ""Average Perceived Value Score (MRT/LRT) by Planning Area in 2017"") + tm_text(""PLN_AREA_N"", size = 0.65) + tm_shape(mpsz_3414) + tm_borders(lwd = 0.1, alpha = 1) + tm_legend(legend.outside=TRUE) #+ tm_text(""PLN_AREA_N"", size = 0.2)"
